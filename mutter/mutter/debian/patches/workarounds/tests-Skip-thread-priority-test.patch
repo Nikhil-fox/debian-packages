@@ -1,0 +1,35 @@
+From: =?utf-8?q?Jeremy_B=C3=ADcha?= <jeremy.bicha@canonical.com>
+Date: Mon, 21 Aug 2023 11:45:48 -0400
+Subject: tests: Skip thread priority test
+
+This test added to 45 fails on Ubuntu's armhf builders
+
+https://launchpad.net/ubuntu/+source/mutter/45~beta.1-0ubuntu1/+latestbuild/armhf
+
+and on Debian's i386
+
+https://buildd.debian.org/status/logs.php?pkg=mutter&arch=i386
+
+Architecture defines are at
+https://wiki.debian.org/ArchitectureSpecificsMemo
+---
+ src/tests/native-thread.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/src/tests/native-thread.c b/src/tests/native-thread.c
+index abe944b..d798bf9 100644
+--- a/src/tests/native-thread.c
++++ b/src/tests/native-thread.c
+@@ -1156,6 +1156,12 @@ assert_realtime (MetaThreadImpl  *thread_impl,
+                                 g_variant_new ("(t)", gettid ()));
+ 
+   g_variant_get (ret, "(u)", &priority);
++
++#if defined  __arm__ || defined __i386__
++  g_test_incomplete ("Modifying thread priority is not supported by this architecture");
++  return;
++#endif
++
+   g_assert_cmpint (priority, ==, 20);
+ 
+   return NULL;

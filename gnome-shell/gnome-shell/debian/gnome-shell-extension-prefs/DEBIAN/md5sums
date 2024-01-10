@@ -1,0 +1,6 @@
+f89ede41430c619b8c033281c78fff1e  usr/bin/gnome-extensions-app
+1c507f32a7f39f501bcd48a1d976b79e  usr/bin/gnome-shell-extension-prefs
+181d5e7450202403a57a926cd393fd17  usr/share/applications/org.gnome.Extensions.desktop
+feeeccfc6d80d57b09e4dade82bbe3ea  usr/share/doc/gnome-shell-extension-prefs/changelog.Debian.gz
+396950755d9c81967f49e7c1a5f7979f  usr/share/doc/gnome-shell-extension-prefs/copyright
+1a428490cf9e6dd65ddd6f7a402321c8  usr/share/metainfo/org.gnome.Extensions.metainfo.xml

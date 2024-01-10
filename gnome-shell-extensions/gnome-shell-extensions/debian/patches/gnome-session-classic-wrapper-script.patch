@@ -1,0 +1,30 @@
+From: Michael Biebl <biebl@debian.org>
+Date: Tue, 30 Jan 2018 09:04:03 +0000
+Subject: Use a wrapper script to start GNOME classic session
+
+Xsession currently doesn't allow passing more then one argument, as it
+otherwise fails with
+Xsession: unable to launch "gnome-session --session classic" X session ---
+"gnome-session --session classic" not found; falling back to default session.
+
+This is due to [1]. Add a wrapper script to start the GNOME classic session
+as a workaround. Once [1] is fixed, this should be removed again.
+
+[1] http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=653327.
+---
+ data/gnome-classic.desktop.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/data/gnome-classic.desktop.in b/data/gnome-classic.desktop.in
+index 13da2b5..d627655 100644
+--- a/data/gnome-classic.desktop.in
++++ b/data/gnome-classic.desktop.in
+@@ -1,7 +1,7 @@
+ [Desktop Entry]
+ Name=GNOME Classic
+ Comment=This session logs you into GNOME Classic
+-Exec=env GNOME_SHELL_SESSION_MODE=classic gnome-session
++Exec=gnome-session-classic
+ TryExec=gnome-session
+ Type=Application
+ DesktopNames=GNOME-Classic;GNOME;

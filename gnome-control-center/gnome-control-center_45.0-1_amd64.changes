@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Fri, 15 Sep 2023 16:19:50 -0400
+Source: gnome-control-center
+Binary: gnome-control-center gnome-control-center-data gnome-control-center-dbgsym gnome-control-center-dev
+Architecture: all amd64
+Version: 1:45.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Changed-By: Jeremy Bícha <jbicha@ubuntu.com>
+Description:
+ gnome-control-center - utilities to configure the GNOME desktop
+ gnome-control-center-data - configuration applets for GNOME - data files
+ gnome-control-center-dev - utilities to configure the GNOME desktop
+Changes:
+ gnome-control-center (1:45.0-1) unstable; urgency=medium
+ .
+   * New upstream release
+   * debian/control.in: Build-Depend on tecla
+Checksums-Sha1:
+ b6b414256fb6d47121417a25874083a620abbebb 3653928 gnome-control-center-data_45.0-1_all.deb
+ ec24cb5c9c256270eb9fbf5e1a40f6e90a06c1ef 2588340 gnome-control-center-dbgsym_45.0-1_amd64.deb
+ 79f6439da72f6ea5c4af9e5b6bd8ca4514cd5ff6 10936 gnome-control-center-dev_45.0-1_all.deb
+ 98c74737254f15113ba8e1762f89ec4a05c5989d 23838 gnome-control-center_45.0-1_amd64.buildinfo
+ dc7474e5bdebe683b4eba770e44095dcd3f99e5c 2909376 gnome-control-center_45.0-1_amd64.deb
+Checksums-Sha256:
+ 39add5b5b51ab883c81262a66197a73bf80fe1e5499b2bc667586c4e7df7c167 3653928 gnome-control-center-data_45.0-1_all.deb
+ bd57652cfc88420a826e96091d25e02729880a8b1c61aa3149698b729148d780 2588340 gnome-control-center-dbgsym_45.0-1_amd64.deb
+ 7c408a821e85a39db89bb97960211869f4f7d81d6ee9b1c2f659a258dbf6291d 10936 gnome-control-center-dev_45.0-1_all.deb
+ e0d5fdf1c38bb1180c606bd79cea43c84c90780de306a593eb210001611d6920 23838 gnome-control-center_45.0-1_amd64.buildinfo
+ 33d7890fdb4f2402f222c66ea31529f0e5f1a0144f6a4c8de16e0393a54c0bf1 2909376 gnome-control-center_45.0-1_amd64.deb
+Files:
+ f0bfbb5809ee27fb1c8c0ca146bd2334 3653928 gnome optional gnome-control-center-data_45.0-1_all.deb
+ 8405d280185f81cfee884db0d52cdb27 2588340 debug optional gnome-control-center-dbgsym_45.0-1_amd64.deb
+ 9c8475fac7d2ac2d6bad6271b8d47d0c 10936 devel optional gnome-control-center-dev_45.0-1_all.deb
+ d1588840e94e48ca3ed6212f8e15c0a8 23838 gnome optional gnome-control-center_45.0-1_amd64.buildinfo
+ bb82f4250fad6c2e7fff5f4e2b46a5d4 2909376 gnome optional gnome-control-center_45.0-1_amd64.deb

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2015 Richard Hughes <richard@hughsie.com> -->
+<component type="desktop">
+  <id>org.gnome.Settings.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>Settings</name>
+  <summary>Utility to configure the GNOME desktop</summary>
+  <description>
+    <p>
+      Settings is the primary interface for configuring your system.
+    </p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://gitlab.gnome.org/GNOME/gnome-control-center/raw/HEAD/shell/appdata/screenshot-appearance.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.gnome.org/GNOME/gnome-control-center/raw/HEAD/shell/appdata/screenshot-sound.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.gnome.org/GNOME/gnome-control-center/raw/HEAD/shell/appdata/screenshot-mouse.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.gnome.org/GNOME/gnome-control-center/raw/HEAD/shell/appdata/screenshot-keyboard.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-control-center/issues/</url>
+  <url type="donation">https://www.gnome.org/friends/</url>
+  <url type="translate">https://wiki.gnome.org/TranslationProject</url>
+  <update_contact>gnomecc-list_at_gnome.org</update_contact>
+  <project_group>GNOME</project_group>
+  <launchable type="desktop-id">org.gnome.Settings.desktop</launchable>
+  <developer_name>The GNOME Project</developer_name>
+  <compulsory_for_desktop>GNOME</compulsory_for_desktop>
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>HighContrast</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>SearchProvider</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
+
+  <releases>
+    <release version="45.0" date="2023-09-15">
+    <description>
+      <ul>
+        <li>Fix sidebar navigation issues</li>
+        <li>Fix showing of QR Code button for non-supported Wi-Fi network security</li>
+        <li>Various other fixes, improvements, and translation updates</li>
+      </ul>
+    </description>
+    </release>
+    <release version="45.rc" date="2023-08-25">
+    <description>
+      <ul>
+        <li>Settings panels have been ported to modern libadwaita navigation widgets</li>
+        <li>The Printers settings have been redesigned</li>
+        <li>Various other fixes and improvements</li>
+      </ul>
+    </description>
+    </release>
+    <release version="45.beta" date="2023-08-07">
+    <description>
+      <ul>
+        <li>Performance improvements when loading a panel at startup</li>
+        <li>Multiple settings are now using modern Libadwaita widgets</li>
+        <li>New Privacy settings panel</li>
+        <li>New About panel</li>
+        <li>Various new accessibility labels added for screen readers</li>
+        <li>Visual and text improvements to the Online Accounts panel</li>
+        <li>New "card" style for the list of printers</li>
+        <li>Various other fixes and improvements</li>
+      </ul>
+    </description>
+    </release>
+  </releases>
+
+  <translation type="gettext">gnome-control-center-2.0</translation>
+  <custom>
+    <value key="Purism::form_factor">workstation</value>
+    <value key="Purism::form_factor">mobile</value>
+  </custom>
+</component>

@@ -1,0 +1,12 @@
+Package: gnome-control-center-dev
+Source: gnome-control-center
+Version: 1:45.0-1
+Architecture: all
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 23
+Depends: gnome-control-center-data
+Section: devel
+Priority: optional
+Multi-Arch: foreign
+Description: utilities to configure the GNOME desktop
+ This package contains the file required to get the keydirs location

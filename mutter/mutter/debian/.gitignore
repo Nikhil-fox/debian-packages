@@ -1,0 +1,14 @@
+/*.debhelper.log
+/*.substvars
+/.debhelper/
+/debhelper-build-stamp
+/files
+/gir1.2-mutter-*/
+/libmutter-*-0/
+/libmutter-*-dev/
+/libmutter-test-*/
+/mutter-*-tests/
+/mutter-common-bin/
+/mutter-common/
+/mutter/
+/tmp/

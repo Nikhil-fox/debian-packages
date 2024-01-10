@@ -1,0 +1,137 @@
+/*
+ * Mtk
+ *
+ * A low-level base library.
+ *
+ * Copyright (C) 2023 Red Hat
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#pragma once
+
+#include <cairo.h>
+#include <glib-object.h>
+#include <graphene.h>
+
+#include "mtk/mtk-macros.h"
+
+#define MTK_TYPE_RECTANGLE            (mtk_rectangle_get_type ())
+
+typedef enum _MtkRoundingStrategy
+{
+  MTK_ROUNDING_STRATEGY_SHRINK,
+  MTK_ROUNDING_STRATEGY_GROW,
+  MTK_ROUNDING_STRATEGY_ROUND,
+} MtkRoundingStrategy;
+
+
+/**
+ * MtkRectangle:
+ * @x: X coordinate of the top-left corner
+ * @y: Y coordinate of the top-left corner
+ * @width: Width of the rectangle
+ * @height: Height of the rectangle
+ */
+#ifdef __GI_SCANNER__
+/* The introspection scanner is currently unable to lookup how
+ * cairo_rectangle_int_t is actually defined. This prevents
+ * introspection data for the GdkRectangle type to include fields
+ * descriptions. To workaround this issue, we define it with the same
+ * content as cairo_rectangle_int_t, but only under the introspection
+ * define.
+ */
+struct _MtkRectangle
+{
+  int x;
+  int y;
+  int width;
+  int height;
+};
+typedef struct _MtkRectangle MtkRectangle;
+#else
+typedef cairo_rectangle_int_t MtkRectangle;
+#endif
+
+#define MTK_RECTANGLE_INIT(_x, _y, _width, _height) \
+        (MtkRectangle) { \
+          .x = (_x), \
+          .y = (_y), \
+          .width = (_width), \
+          .height = (_height) \
+        }
+
+MTK_EXPORT
+GType mtk_rectangle_get_type (void);
+
+MTK_EXPORT
+MtkRectangle * mtk_rectangle_copy (const MtkRectangle *rect);
+
+MTK_EXPORT
+void mtk_rectangle_free (MtkRectangle *rect);
+
+/* Function to make initializing a rect with a single line of code easy */
+MTK_EXPORT
+MtkRectangle * mtk_rectangle_new (int x,
+                                  int y,
+                                  int width,
+                                  int height);
+
+/* Basic comparison functions */
+MTK_EXPORT
+int mtk_rectangle_area (const MtkRectangle *rect);
+
+MTK_EXPORT
+gboolean mtk_rectangle_equal (const MtkRectangle *src1,
+                              const MtkRectangle *src2);
+
+/* Find the bounding box of the union of two rectangles */
+MTK_EXPORT
+void mtk_rectangle_union (const MtkRectangle *rect1,
+                          const MtkRectangle *rect2,
+                          MtkRectangle       *dest);
+
+MTK_EXPORT
+gboolean mtk_rectangle_intersect (const MtkRectangle *src1,
+                                  const MtkRectangle *src2,
+                                  MtkRectangle       *dest);
+
+MTK_EXPORT
+gboolean mtk_rectangle_overlap (const MtkRectangle *rect1,
+                                const MtkRectangle *rect2);
+
+MTK_EXPORT
+gboolean mtk_rectangle_vert_overlap (const MtkRectangle *rect1,
+                                     const MtkRectangle *rect2);
+
+MTK_EXPORT
+gboolean mtk_rectangle_horiz_overlap (const MtkRectangle *rect1,
+                                      const MtkRectangle *rect2);
+
+MTK_EXPORT
+gboolean mtk_rectangle_could_fit_rect (const MtkRectangle *outer_rect,
+                                       const MtkRectangle *inner_rect);
+
+MTK_EXPORT
+gboolean mtk_rectangle_contains_rect (const MtkRectangle *outer_rect,
+                                      const MtkRectangle *inner_rect);
+
+MTK_EXPORT
+graphene_rect_t mtk_rectangle_to_graphene_rect (MtkRectangle *rect);
+
+MTK_EXPORT
+void mtk_rectangle_from_graphene_rect (const graphene_rect_t *rect,
+                                       MtkRoundingStrategy    rounding_strategy,
+                                       MtkRectangle          *dest);
+

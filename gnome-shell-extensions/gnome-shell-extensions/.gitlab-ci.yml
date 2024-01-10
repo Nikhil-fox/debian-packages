@@ -1,0 +1,181 @@
+# SPDX-FileCopyrightText: 2017 Florian Müllner <fmuellner@gnome.org>
+#
+# SPDX-License-Identifier: GPL-2.0-or-later
+
+include:
+  - remote: 'https://gitlab.freedesktop.org/freedesktop/ci-templates/-/raw/bbe5232986c9b98eb1efe62484e07216f7d1a4df/templates/fedora.yml'
+  - remote: "https://gitlab.freedesktop.org/freedesktop/ci-templates/-/raw/6f86b8bcb0cd5168c32779c4fea9a893c4a0c046/templates/ci-fairy.yml"
+
+stages:
+  - pre_review
+  - prepare
+  - review
+  - build
+  - deploy
+
+default:
+  image: registry.gitlab.gnome.org/gnome/gnome-shell/fedora/35:2022-02-18.0
+  # Cancel jobs if newer commits are pushed to the branch
+  interruptible: true
+  # Auto-retry jobs in case of infra failures
+  retry:
+    max: 1
+    when:
+      - 'runner_system_failure'
+      - 'stuck_or_timeout_failure'
+      - 'scheduler_failure'
+      - 'api_failure'
+
+variables:
+  FDO_UPSTREAM_REPO: GNOME/gnome-shell-extensions
+  LINT_LOG: "eslint-report.xml"
+
+workflow:
+  rules:
+    - if: '$CI_MERGE_REQUEST_IID'
+    - if: '$CI_COMMIT_TAG'
+    - if: '$CI_COMMIT_BRANCH'
+
+.pipeline_guard: &pipeline_guard
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_TAG'
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+    - if: '$CI_COMMIT_BRANCH =~ /^gnome-[0-9-]+$/'
+    - when: 'manual'
+
+.gnome-shell-extensions.fedora:34:
+  variables:
+    FDO_DISTRIBUTION_VERSION: 34
+    FDO_DISTRIBUTION_TAG: '2021-08-31.0'
+    FDO_DISTRIBUTION_PACKAGES: >
+      meson git gettext sassc
+
+.prereview_req: &prereview_req
+  needs:
+    - check_commit_log
+    - check-merge-request
+
+check_commit_log:
+  extends:
+    - .fdo.ci-fairy
+  stage: pre_review
+  script:
+    - if [[ x"$CI_MERGE_REQUEST_TARGET_BRANCH_NAME" != "x" ]] ;
+      then
+        ci-fairy check-commits --junit-xml=commit-message-junit-report.xml ;
+      else
+        echo "Not a merge request" ;
+      fi
+  <<: *pipeline_guard
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - commit-message-junit-report.xml
+    reports:
+      junit: commit-message-junit-report.xml
+
+check-merge-request:
+  extends:
+    - .fdo.ci-fairy
+  stage: pre_review
+  script:
+    - if [[ x"$CI_MERGE_REQUEST_TARGET_BRANCH_NAME" != "x" ]] ;
+      then
+        ci-fairy check-merge-request --require-allow-collaboration --junit-xml=check-merge-request-report.xml ;
+      else
+        echo "Not a merge request" ;
+      fi
+  <<: *pipeline_guard
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - check-merge-request-report.xml
+    reports:
+      junit: check-merge-request-report.xml
+
+check-reuse:
+  stage: pre_review
+  image:
+    name: fsfe/reuse:latest
+    entrypoint: [""]
+  script:
+    - reuse lint
+
+build-fedora-container:
+  extends:
+    - .fdo.container-build@fedora@x86_64
+    - .gnome-shell-extensions.fedora:34
+  stage: prepare
+  <<: *prereview_req
+
+js_check:
+  stage: review
+  <<: *prereview_req
+  script:
+    - gjs-check-syntax
+
+eslint:
+  stage: review
+  <<: *prereview_req
+  script:
+    - export NODE_PATH=$(npm root -g)
+    - ./.gitlab-ci/run-eslint --output-file ${LINT_LOG} --format junit --stdout
+  artifacts:
+    paths:
+      - ${LINT_LOG}
+    reports:
+      junit: ${LINT_LOG}
+
+build-bundles:
+  stage: build
+  <<: *prereview_req
+  script:
+    - ./export-zips.sh
+  artifacts:
+    name: 'Extension bundles'
+    expose_as: 'Get Extension bundles here'
+    paths:
+      - zip-files/
+
+fedora-build:
+  extends:
+    - .fdo.distribution-image@fedora
+    - .gnome-shell-extensions.fedora:34
+  stage: build
+  needs:
+    - build-fedora-container
+  script:
+    - meson setup build --werror -Dextension_set=all -Dclassic_mode=true
+    - meson compile -C build
+    - meson test -C build
+    - meson install -C build
+  artifacts:
+    paths:
+      - build
+
+fedora-dist:
+  extends:
+    - .fdo.distribution-image@fedora
+    - .gnome-shell-extensions.fedora:34
+  stage: deploy
+  needs:
+    - fedora-build
+  variables:
+    GIT_SUBMODULE_STRATEGY: normal
+  script:
+    - meson dist -C build
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      changes:
+        - "**/meson.build"
+        - meson/*
+
+fedora-dist-tarball:
+  extends: fedora-dist
+  artifacts:
+    expose_as: 'Get tarball here'
+    paths:
+      - build/meson-dist/$CI_PROJECT_NAME-$CI_COMMIT_TAG.tar.xz
+  rules:
+    - if: '$CI_COMMIT_TAG'

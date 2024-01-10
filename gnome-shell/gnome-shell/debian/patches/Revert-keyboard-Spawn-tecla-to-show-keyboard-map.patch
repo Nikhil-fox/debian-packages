@@ -1,0 +1,24 @@
+From: =?utf-8?q?Jeremy_B=C3=ADcha?= <jeremy.bicha@canonical.com>
+Date: Fri, 1 Sep 2023 11:29:45 -0400
+Subject: Revert "keyboard: Spawn "tecla" to show keyboard map"
+
+Tecla is not ready yet:
+https://gitlab.gnome.org/GNOME/tecla/-/issues/7
+
+This reverts commit 04aaa4b67bffbfe6d472e7f25c8e892f43151ed2.
+---
+ js/ui/status/keyboard.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/js/ui/status/keyboard.js b/js/ui/status/keyboard.js
+index 8d98e16..106f1e8 100644
+--- a/js/ui/status/keyboard.js
++++ b/js/ui/status/keyboard.js
+@@ -1103,6 +1103,6 @@ class InputSourceIndicator extends PanelMenu.Button {
+         if (xkbVariant.length > 0)
+             description = `${description}\t${xkbVariant}`;
+ 
+-        Util.spawn(['tecla', description]);
++        Util.spawn(['gkbd-keyboard-display', '-l', description]);
+     }
+ });

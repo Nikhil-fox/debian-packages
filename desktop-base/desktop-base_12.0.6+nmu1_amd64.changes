@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Fri, 30 Jun 2023 12:36:56 +0200
+Source: desktop-base
+Binary: desktop-base
+Architecture: all
+Version: 12.0.6+nmu1
+Distribution: unstable
+Urgency: medium
+Maintainer: Debian Desktop Team <debian-desktop@lists.debian.org>
+Changed-By: Andreas Beckmann <anbe@debian.org>
+Description:
+ desktop-base - common files for the Debian Desktop
+Closes: 1035431
+Changes:
+ desktop-base (12.0.6+nmu1) unstable; urgency=medium
+ .
+   * Non-maintainer upload.
+   * prerm: Remove the emerald alternatives, too.  (Closes: #1035431)
+Checksums-Sha1:
+ ce80ed1066495eefacaf80293047ce8f9606dcd3 24254596 desktop-base_12.0.6+nmu1_all.deb
+ 87ccfbba29168c98f5541026db47b28a86816563 10707 desktop-base_12.0.6+nmu1_amd64.buildinfo
+Checksums-Sha256:
+ 838cade472b67acf2400c635ef7f1b61b8b45acc9edd844eeb107d049ab50349 24254596 desktop-base_12.0.6+nmu1_all.deb
+ d110fb45b286c27774bf47d562f7ce6bce82eea144f88031a046a259fc94b133 10707 desktop-base_12.0.6+nmu1_amd64.buildinfo
+Files:
+ 42d70ede87d295a575279fe804a19d7b 24254596 x11 optional desktop-base_12.0.6+nmu1_all.deb
+ 22cd0df828d84b5bbf93ec3f9b85aa7f 10707 x11 optional desktop-base_12.0.6+nmu1_amd64.buildinfo

@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Mon, 18 Sep 2023 08:45:42 -0400
+Source: gnome-shell-extensions
+Binary: gnome-shell-extensions
+Architecture: all
+Version: 45.0-1
+Distribution: experimental
+Urgency: medium
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Changed-By: Jeremy Bícha <jbicha@ubuntu.com>
+Description:
+ gnome-shell-extensions - Extensions to extend functionality of GNOME Shell
+Changes:
+ gnome-shell-extensions (45.0-1) experimental; urgency=medium
+ .
+   * New upstream release
+Checksums-Sha1:
+ a2fcac6d41557a99748f88033dab0c312cf34bce 144256 gnome-shell-extensions_45.0-1_all.deb
+ fbd656258280ff3abdfce7b738ee39b09ad80407 5642 gnome-shell-extensions_45.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 116fb3b701aca0fd7508dae50bf5f3e00268b2017ec9e6f198e6592403a24058 144256 gnome-shell-extensions_45.0-1_all.deb
+ 48b632ee2e8762e3ec55275829469a9ddc18253fd2d4427480dfd6ba87c4c819 5642 gnome-shell-extensions_45.0-1_amd64.buildinfo
+Files:
+ 1c043a3fa61af4a310132f021b92aeaf 144256 gnome optional gnome-shell-extensions_45.0-1_all.deb
+ 20e5e915cf82d928832d161b786cf0a0 5642 gnome optional gnome-shell-extensions_45.0-1_amd64.buildinfo

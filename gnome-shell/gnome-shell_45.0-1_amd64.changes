@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Mon, 18 Sep 2023 11:01:45 -0400
+Source: gnome-shell
+Binary: gnome-shell gnome-shell-common gnome-shell-dbgsym gnome-shell-extension-prefs
+Architecture: all amd64
+Version: 45.0-1
+Distribution: experimental
+Urgency: medium
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Changed-By: Jeremy Bícha <jbicha@ubuntu.com>
+Description:
+ gnome-shell - graphical shell for the GNOME desktop
+ gnome-shell-common - common files for the GNOME graphical shell
+ gnome-shell-extension-prefs - tool to enable / disable GNOME Shell extensions
+Closes: 1052067
+Changes:
+ gnome-shell (45.0-1) experimental; urgency=medium
+ .
+   * New upstream release
+     - Fix exposing window previews on lock screen via keyboard shortcuts
+       (Closes: #1052067, CVE-2023-43090, gnome-shell#6990)
+   * Bump minimum mutter to 45.0
+Checksums-Sha1:
+ bd645834b730df473c68a519e07e0db3c957b439 821512 gnome-shell-common_45.0-1_all.deb
+ 42550d5506aa74c15f54a7117cb43399100554df 1377000 gnome-shell-dbgsym_45.0-1_amd64.deb
+ f0726cf794a0f7aca82dfcce2c01bcdb06c49628 28676 gnome-shell-extension-prefs_45.0-1_amd64.deb
+ 4871caf6c4013601d97babf58d8b62b7f7ff8b43 22037 gnome-shell_45.0-1_amd64.buildinfo
+ 302beb22fe300a91afcbf54971e41c2d67c99e30 882292 gnome-shell_45.0-1_amd64.deb
+Checksums-Sha256:
+ bef5758fec2dd5a1ddd12144fb21b2bb330bc45b0a4fbfa4b8df73dd83e808cf 821512 gnome-shell-common_45.0-1_all.deb
+ 6f297fb6b0327c50e2c0e686cec5a8d79ab498994f56e779b8826cec5aca0630 1377000 gnome-shell-dbgsym_45.0-1_amd64.deb
+ c2552a49c0bf48ccf6baeae3ff692bfae3feff6a1d2d2ea59c802a3fa47e063d 28676 gnome-shell-extension-prefs_45.0-1_amd64.deb
+ 628fe39e8544dd21a9c8284118af9b7ef5f275a6ccd6ea4ccde52e459cb5e135 22037 gnome-shell_45.0-1_amd64.buildinfo
+ 8a5c1f7cf13e6642a4070e46d04fc1417551561aea174682441728315e09720b 882292 gnome-shell_45.0-1_amd64.deb
+Files:
+ 5750ed68b581420f5d7de843a9564e66 821512 gnome optional gnome-shell-common_45.0-1_all.deb
+ fe83db843d2acf13cc90ad59b053f360 1377000 debug optional gnome-shell-dbgsym_45.0-1_amd64.deb
+ 3c855ea8cecf0253195897a4032411e1 28676 gnome optional gnome-shell-extension-prefs_45.0-1_amd64.deb
+ b59ed5e460494ae70265435f6911f505 22037 gnome optional gnome-shell_45.0-1_amd64.buildinfo
+ ed7427a7440b2a325548a8e58ebe6373 882292 gnome optional gnome-shell_45.0-1_amd64.deb

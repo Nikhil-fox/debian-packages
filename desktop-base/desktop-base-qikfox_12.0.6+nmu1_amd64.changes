@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Fri, 30 Jun 2023 12:36:56 +0200
+Source: desktop-base-qikfox
+Binary: desktop-base-qikfox
+Architecture: all
+Version: 12.0.6+nmu1
+Distribution: unstable
+Urgency: medium
+Maintainer: Debian Desktop Team <debian-desktop@lists.debian.org>
+Changed-By: Andreas Beckmann <anbe@debian.org>
+Description:
+ desktop-base-qikfox - common files for the Debian Desktop
+Closes: 1035431
+Changes:
+ desktop-base-qikfox (12.0.6+nmu1) unstable; urgency=medium
+ .
+   * Non-maintainer upload.
+   * prerm: Remove the emerald alternatives, too.  (Closes: #1035431)
+Checksums-Sha1:
+ bd24475f18c9794eeceb78f00b9ac09abe44eb1a 24254240 desktop-base-qikfox_12.0.6+nmu1_all.deb
+ 52d3a5031c459ba65c9a9b799a81e2f1cee01121 10742 desktop-base-qikfox_12.0.6+nmu1_amd64.buildinfo
+Checksums-Sha256:
+ 7e4bd06ca34e5df8bba739a8642678c6257fe4df7972f6841454e9b8064344f3 24254240 desktop-base-qikfox_12.0.6+nmu1_all.deb
+ e7c5bf2f0735a0466dabe0816087b6f2e60e90b79a460e8fc34485c194a3a46e 10742 desktop-base-qikfox_12.0.6+nmu1_amd64.buildinfo
+Files:
+ ab766a9eeb068056ac14f9e18bb8b085 24254240 x11 optional desktop-base-qikfox_12.0.6+nmu1_all.deb
+ 689f29d7ede5498d9af41c894de775eb 10742 x11 optional desktop-base-qikfox_12.0.6+nmu1_amd64.buildinfo

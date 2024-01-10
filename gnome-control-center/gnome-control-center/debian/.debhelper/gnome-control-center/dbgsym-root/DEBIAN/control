@@ -1,0 +1,12 @@
+Package: gnome-control-center-dbgsym
+Source: gnome-control-center
+Version: 1:45.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 2978
+Depends: gnome-control-center (= 1:45.0-1)
+Section: debug
+Priority: optional
+Description: debug symbols for gnome-control-center
+Build-Ids: 437537d898d0ff1008f918fd4d4af878d741fd31 7edfaf349c106b742e769429fa406a4f04cb03de 937bc6dbfce78b42cce35d5fa0692daf7d0fabba 9a752aacade630080396f01bdef06937ff46c142 9d7ce6a7b1152c974256370f459efde156c3217e

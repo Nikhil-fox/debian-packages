@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Extensions "$@"

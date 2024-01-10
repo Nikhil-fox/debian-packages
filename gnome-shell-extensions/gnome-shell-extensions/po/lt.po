@@ -1,0 +1,361 @@
+# gnome extensions lithuanian language.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Algimantas Margevičius <margevicius.algimantas@gmail.com>, 2011.
+# Aurimas Černius <aurisc4@gmail.com>, 2013-2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lt\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-shell-extensions/"
+"issues\n"
+"POT-Creation-Date: 2021-11-06 14:08+0000\n"
+"PO-Revision-Date: 2021-12-14 13:49+0200\n"
+"Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
+"Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2)\n"
+"X-Generator: Gtranslator 40.0\n"
+
+#: data/gnome-classic.desktop.in:3
+msgid "GNOME Classic"
+msgstr "Klasikinis GNOME"
+
+#: data/gnome-classic.desktop.in:4 data/gnome-classic-wayland.desktop.in:4
+#: data/gnome-classic-xorg.desktop.in:4
+msgid "This session logs you into GNOME Classic"
+msgstr "Šis seansas prijungs jus prie klasikinio GNOME"
+
+#: data/gnome-classic-wayland.desktop.in:3
+#| msgid "GNOME Classic"
+msgid "GNOME Classic on Wayland"
+msgstr "Klasikinis GNOME Wayland aplinkoje"
+
+#: data/gnome-classic-xorg.desktop.in:3
+#| msgid "GNOME Classic"
+msgid "GNOME Classic on Xorg"
+msgstr "Klasikinis GNOME Xorg aplinkoje"
+
+#: extensions/apps-menu/extension.js:112
+msgid "Favorites"
+msgstr "Mėgiamiausi"
+
+#: extensions/apps-menu/extension.js:366
+msgid "Applications"
+msgstr "Programos"
+
+#: extensions/auto-move-windows/org.gnome.shell.extensions.auto-move-windows.gschema.xml:6
+msgid "Application and workspace list"
+msgstr "Programų ir darbo sričių sąrašas"
+
+#: extensions/auto-move-windows/org.gnome.shell.extensions.auto-move-windows.gschema.xml:7
+msgid ""
+"A list of strings, each containing an application id (desktop file name), "
+"followed by a colon and the workspace number"
+msgstr ""
+"Eilučių sąrašas, kur kiekviena eilutė turi programos id (darbalaukio failo "
+"vardą), po jo dvitaškis ir darbo srities numeris"
+
+#: extensions/auto-move-windows/prefs.js:34
+msgid "Workspace Rules"
+msgstr "Darbo sričių taisyklės"
+
+#: extensions/auto-move-windows/prefs.js:236
+msgid "Add Rule"
+msgstr "Pridėti taisyklę"
+
+#. TRANSLATORS: %s is the filesystem name
+#: extensions/drive-menu/extension.js:133
+#: extensions/places-menu/placeDisplay.js:233
+#, javascript-format
+msgid "Ejecting drive “%s” failed:"
+msgstr "Laikmenos „%s“ išstūmimas nepavyko:"
+
+#: extensions/drive-menu/extension.js:149
+msgid "Removable devices"
+msgstr "Išimami įrenginiai"
+
+#: extensions/drive-menu/extension.js:171
+msgid "Open Files"
+msgstr "Atverti failai"
+
+#: extensions/native-window-placement/org.gnome.shell.extensions.native-window-placement.gschema.xml:5
+msgid "Use more screen for windows"
+msgstr "Naudoti daugiau ekrano langams "
+
+#: extensions/native-window-placement/org.gnome.shell.extensions.native-window-placement.gschema.xml:6
+msgid ""
+"Try to use more screen for placing window thumbnails by adapting to screen "
+"aspect ratio, and consolidating them further to reduce the bounding box. "
+"This setting applies only with the natural placement strategy."
+msgstr ""
+"Bandyti naudoti daugiau ekrano vietos talpinant langų miniatiūras pritaikant "
+"prie ekrano kraštinių santykio ir suglaudinant jas taip sumažinant aprėpties "
+"langą. Šis nustatymas galios tik esant „natural“ talpinimo strategijai."
+
+#: extensions/native-window-placement/org.gnome.shell.extensions.native-window-placement.gschema.xml:11
+msgid "Place window captions on top"
+msgstr "Talpinti lango antraštes viršuje"
+
+#: extensions/native-window-placement/org.gnome.shell.extensions.native-window-placement.gschema.xml:12
+msgid ""
+"If true, place window captions on top the respective thumbnail, overriding "
+"shell default of placing it at the bottom. Changing this setting requires "
+"restarting the shell to have any effect."
+msgstr ""
+"Jei teigiama, patalpinti lango antraštes virš atitinkamos miniatiūros, "
+"nepaisant numatyto talpinimo apačioje. Pakeitus šiuos nustatymus, reikės "
+"paleisti apvalkalą iš naujo."
+
+#: extensions/places-menu/extension.js:88
+#: extensions/places-menu/extension.js:91
+msgid "Places"
+msgstr "Vietos"
+
+#: extensions/places-menu/placeDisplay.js:46
+#, javascript-format
+msgid "Failed to launch “%s”"
+msgstr "Nepavyko paleisti „%s“"
+
+#: extensions/places-menu/placeDisplay.js:61
+#, javascript-format
+msgid "Failed to mount volume for “%s”"
+msgstr "Nepavyko prijungti tomo „%s“"
+
+#: extensions/places-menu/placeDisplay.js:148
+#: extensions/places-menu/placeDisplay.js:171
+msgid "Computer"
+msgstr "Kompiuteris"
+
+#: extensions/places-menu/placeDisplay.js:359
+msgid "Home"
+msgstr "Namų aplankas"
+
+#: extensions/places-menu/placeDisplay.js:404
+msgid "Browse Network"
+msgstr "Naršyti tinklą"
+
+#: extensions/screenshot-window-sizer/org.gnome.shell.extensions.screenshot-window-sizer.gschema.xml:7
+msgid "Cycle Screenshot Sizes"
+msgstr "Sukti ekranvaizdžių dydžius ratu"
+
+#: extensions/screenshot-window-sizer/org.gnome.shell.extensions.screenshot-window-sizer.gschema.xml:11
+msgid "Cycle Screenshot Sizes Backward"
+msgstr "Sukti ekranvaizdžių dydžius ratu"
+
+#: extensions/user-theme/org.gnome.shell.extensions.user-theme.gschema.xml:5
+msgid "Theme name"
+msgstr "Temos pavadinimas"
+
+#: extensions/user-theme/org.gnome.shell.extensions.user-theme.gschema.xml:6
+msgid "The name of the theme, to be loaded from ~/.themes/name/gnome-shell"
+msgstr "Temos pavadinimas, kuri bus įkrauta iš ~/.themes/name/gnome-shell"
+
+#: extensions/window-list/extension.js:72
+msgid "Close"
+msgstr "Užverti"
+
+#: extensions/window-list/extension.js:92
+msgid "Unminimize"
+msgstr "Grąžinti iš sumažinimo"
+
+#: extensions/window-list/extension.js:92
+msgid "Minimize"
+msgstr "Sumažinti"
+
+#: extensions/window-list/extension.js:99
+msgid "Unmaximize"
+msgstr "Grąžinti iš išdidinimo"
+
+#: extensions/window-list/extension.js:99
+msgid "Maximize"
+msgstr "Išdidinti"
+
+#: extensions/window-list/extension.js:434
+msgid "Minimize all"
+msgstr "Sumažinti visus"
+
+#: extensions/window-list/extension.js:440
+msgid "Unminimize all"
+msgstr "Grąžinti visus iš sumažinimo"
+
+#: extensions/window-list/extension.js:446
+msgid "Maximize all"
+msgstr "Išdidinti visus"
+
+#: extensions/window-list/extension.js:454
+msgid "Unmaximize all"
+msgstr "Grąžinti visus iš išdidinimo"
+
+#: extensions/window-list/extension.js:462
+msgid "Close all"
+msgstr "Užverti visus"
+
+#: extensions/window-list/extension.js:741
+msgid "Window List"
+msgstr "Langų sąrašas"
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:12
+msgid "When to group windows"
+msgstr "Kada grupuoti langus"
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:13
+msgid ""
+"Decides when to group windows from the same application on the window list. "
+"Possible values are “never”, “auto” and “always”."
+msgstr ""
+"Nusprendžia, kada langų sąraše grupuoti tos pačios programos langus. Galimos "
+"vertės yra „never“, „auto“ ir „always“."
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:20
+#: extensions/window-list/prefs.js:86
+msgid "Show windows from all workspaces"
+msgstr "Rodyti visų darbo sričių langus"
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:21
+msgid "Whether to show windows from all workspaces or only the current one."
+msgstr "Ar rodyti langus iš visų darbo sričių, ar tik dabartinės."
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:27
+msgid "Show the window list on all monitors"
+msgstr "Rodyti langų sąrašą visuose monitoriuose"
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:28
+msgid ""
+"Whether to show the window list on all connected monitors or only on the "
+"primary one."
+msgstr ""
+"Ar rodyti langų sąrašą visuose prijungtuose monitoriuose, ar tik "
+"pagrindiniame."
+
+#: extensions/window-list/prefs.js:39
+msgid "Window Grouping"
+msgstr "Langų grupavimas"
+
+#: extensions/window-list/prefs.js:63
+msgid "Never group windows"
+msgstr "Niekada negrupuoti langų"
+
+#: extensions/window-list/prefs.js:64
+msgid "Group windows when space is limited"
+msgstr "Grupuoti langus, kai yra ribotai vietos"
+
+#: extensions/window-list/prefs.js:65
+msgid "Always group windows"
+msgstr "Visada grupuoti langus"
+
+#: extensions/window-list/prefs.js:81
+msgid "Show on all monitors"
+msgstr "Rodyti visuose monitoriuose"
+
+#: extensions/window-list/workspaceIndicator.js:249
+#: extensions/workspace-indicator/extension.js:254
+msgid "Workspace Indicator"
+msgstr "Darbo srities indikatorius"
+
+#: extensions/workspace-indicator/prefs.js:33
+msgid "Workspace Names"
+msgstr "Darbo sričių pavadinimai"
+
+#: extensions/workspace-indicator/prefs.js:66
+#, javascript-format
+msgid "Workspace %d"
+msgstr "Darbo sritis %d"
+
+#: extensions/workspace-indicator/prefs.js:207
+msgid "Add Workspace"
+msgstr "Pridėti darbo sritį"
+
+#~ msgid "Application"
+#~ msgstr "Programa"
+
+#~ msgid "Create new matching rule"
+#~ msgstr "Sukurti naują atitikimo taisyklę"
+
+#~ msgid "Add"
+#~ msgstr "Pridėti"
+
+#~ msgid "Name"
+#~ msgstr "Pavadinimas"
+
+#~ msgid "Attach modal dialog to the parent window"
+#~ msgstr "Prikabinti modalinį dialogą prie tėvinio lango"
+
+#~ msgid ""
+#~ "This key overrides the key in org.gnome.mutter when running GNOME Shell."
+#~ msgstr ""
+#~ "Šis raktas padaro org.gnome.mutter raktą neveiksniu naudojant GNOME Shell."
+
+#~ msgid "Arrangement of buttons on the titlebar"
+#~ msgstr "Mygtukų išdėstymas pavadinimo juostoje"
+
+#~ msgid ""
+#~ "This key overrides the key in org.gnome.desktop.wm.preferences when "
+#~ "running GNOME Shell."
+#~ msgstr ""
+#~ "Šis raktas padaro org.gnome.desktop.wm.preferences raktą neveiksniu, "
+#~ "naudojant GNOME Shell."
+
+#~ msgid "Enable edge tiling when dropping windows on screen edges"
+#~ msgstr "Įjungti išplėtimą kraštuose nutempiant langus į ekrano kraštus"
+
+#~ msgid "Workspaces only on primary monitor"
+#~ msgstr "Darbo sritys tik pagrindiniame monitoriuje"
+
+#~ msgid "Delay focus changes in mouse mode until the pointer stops moving"
+#~ msgstr "Atidėti fokuso pakeitimą pelei iki žymiklis nustos judėti"
+
+#~ msgid "Thumbnail only"
+#~ msgstr "Tik miniatiūros"
+
+#~ msgid "Application icon only"
+#~ msgstr "Tik programos piktograma"
+
+#~ msgid "Thumbnail and application icon"
+#~ msgstr "Miniatiūra ir programos piktograma"
+
+#~ msgid "Present windows as"
+#~ msgstr "Pateikti langus kaip"
+
+#~ msgid "Activities Overview"
+#~ msgstr "Veiklų apžvalga"
+
+#~ msgid "Hello, world!"
+#~ msgstr "Labas, pasauli!"
+
+#~ msgid "Alternative greeting text."
+#~ msgstr "Alternatyvus pasveikimo tekstas."
+
+#~ msgid ""
+#~ "If not empty, it contains the text that will be shown when clicking on "
+#~ "the panel."
+#~ msgstr ""
+#~ "Jei netuščias, jis turi tekstą, kuri bus rodomas paspaudus ant skydelio."
+
+#~ msgid "Message"
+#~ msgstr "Pranešimas"
+
+#~ msgid ""
+#~ "Example aims to show how to build well behaved extensions for the Shell "
+#~ "and as such it has little functionality on its own.\n"
+#~ "Nevertheless it’s possible to customize the greeting message."
+#~ msgstr ""
+#~ "Example siekia parodyti, kaip sukurti gerai besielgiančius apvalkalo "
+#~ "plėtinius ir kaip toks, turi mažai savo funkcionalumo.\n"
+#~ "Visgi, yra galima pakeisti sveikinimo pranešimą."
+
+#~ msgid "CPU"
+#~ msgstr "CPU"
+
+#~ msgid "Memory"
+#~ msgstr "Atmintis"
+
+#~ msgid "GNOME Shell Classic"
+#~ msgstr "Klasikinis GNOME Shell"
+
+#~ msgid "Window management and application launching"
+#~ msgstr "Langų valdymas ir programų paleidimas"

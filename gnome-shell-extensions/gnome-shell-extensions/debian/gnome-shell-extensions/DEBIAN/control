@@ -1,0 +1,24 @@
+Package: gnome-shell-extensions
+Version: 45.0-1
+Architecture: all
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 978
+Depends: gir1.2-adw-1, gir1.2-atk-1.0, gir1.2-glib-2.0, gir1.2-gmenu-3.0, gir1.2-graphene-1.0 (>= 1.10.2), gir1.2-gtk-4.0, gir1.2-pango-1.0, gnome-session-bin (>= 3.8), gnome-settings-daemon (>= 3.24), gnome-shell (<< 46~), gnome-shell (>= 45~), gvfs (>= 1.16.0), dconf-gsettings-backend | gsettings-backend
+Recommends: gnome-shell-extension-prefs
+Breaks: gnome-shell-common (<< 3.18)
+Replaces: gnome-shell-common (<< 3.18)
+Section: gnome
+Priority: optional
+Homepage: https://wiki.gnome.org/Projects/GnomeShell/Extensions
+Description: Extensions to extend functionality of GNOME Shell
+ The GNOME Shell redefines user interactions with the GNOME desktop. In
+ particular, it offers new paradigms for launching applications,
+ accessing documents, and organizing open windows in GNOME. Later, it
+ will introduce a new applets eco-system and offer new solutions for
+ other desktop features, such as notifications and contacts management.
+ The GNOME Shell is intended to replace functions handled by the GNOME
+ Panel and by the window manager in previous versions of GNOME. The GNOME
+ Shell has rich visual effects enabled by new graphical technologies.
+ .
+ GNOME Shell is extensible using extensions. This package contains
+ official GNOME Shell extensions.

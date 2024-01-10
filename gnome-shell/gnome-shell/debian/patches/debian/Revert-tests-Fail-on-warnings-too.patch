@@ -1,0 +1,22 @@
+From: Jeremy Bicha <jeremy.bicha@canonical.com>
+Date: Fri, 17 Feb 2023 15:35:20 -0500
+Subject: Revert "tests: Fail on warnings too"
+
+This reverts commit 207b9bb3c0a582b830218fd1b6e8760684adbc48.
+---
+ tests/meson.build | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/tests/meson.build b/tests/meson.build
+index a22a0d9..59070c3 100644
+--- a/tests/meson.build
++++ b/tests/meson.build
+@@ -56,7 +56,7 @@ libgvc_path = fs.parent(libgvc.get_variable('libgvc').full_path())
+ background_file = files(join_paths('data', 'background.png'))
+ 
+ shell_testenv = environment()
+-shell_testenv.set('G_DEBUG', 'fatal-warnings')
++shell_testenv.set('G_DEBUG', 'fatal-criticals')
+ shell_testenv.set('G_MESSAGES_DEBUG', 'GNOME Shell')
+ shell_testenv.set('GNOME_SHELL_DATADIR', data_builddir)
+ shell_testenv.set('GNOME_SHELL_BUILDDIR', src_builddir)

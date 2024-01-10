@@ -1,0 +1,17 @@
+Package: gnome-shell-extension-prefs
+Source: gnome-shell
+Version: 45.0-1
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 60
+Depends: gir1.2-adw-1, gir1.2-gtk-4.0, gjs (>= 1.73.1), gnome-shell (= 45.0-1), gnome-shell-common (= 45.0-1)
+Recommends: chrome-gnome-shell
+Breaks: gnome-shell (<< 3.36.0-2)
+Replaces: gnome-shell (<< 3.36.0-2)
+Provides: gnome-extensions-app
+Section: gnome
+Priority: optional
+Homepage: https://wiki.gnome.org/Projects/GnomeShell
+Description: tool to enable / disable GNOME Shell extensions
+ This package contains a tool which users who use Shell extensions can use to
+ toggle them on and off, and access their preferences.

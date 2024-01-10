@@ -1,0 +1,84 @@
+Format: 1.8
+Date: Mon, 18 Sep 2023 10:21:08 -0400
+Source: mutter
+Binary: gir1.2-mutter-13 libmutter-13-0 libmutter-13-0-dbgsym libmutter-13-dev libmutter-test-13 libmutter-test-13-dbgsym mutter mutter-13-tests mutter-13-tests-dbgsym mutter-common mutter-common-bin mutter-common-bin-dbgsym mutter-dbgsym
+Architecture: amd64 all
+Version: 45.0-1
+Distribution: experimental
+Urgency: medium
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Changed-By: Jeremy Bícha <jbicha@ubuntu.com>
+Description:
+ gir1.2-mutter-13 - GObject introspection data for Mutter
+ libmutter-13-0 - window manager library from the Mutter window manager
+ libmutter-13-dev - Development files for the Mutter window manager
+ libmutter-test-13 - Test helper library for GNOME's window manager library
+ mutter     - Example window manager using GNOME's window manager library
+ mutter-13-tests - Tests for GNOME's window manager library
+ mutter-common - shared files for the Mutter window manager
+ mutter-common-bin - shared programs for the Mutter window manager
+Closes: 1051780
+Changes:
+ mutter (45.0-1) experimental; urgency=medium
+ .
+   [ Jeremy Bícha ]
+   * New upstream release
+     - Fix focus-follows-mouse regression (Closes: #1051780)
+   * debian/libmutter-13-0.symbols: Add new symbol
+   * Refresh patches
+ .
+   [ Simon McVittie ]
+   * Merge packaging from 44.4-3 in unstable
+ .
+   [ Daniel van Vugt ]
+   * Update Support-Dynamic-triple-double-buffering.patch to match upstream.
+     This fixes a leak when a monitor is unplugged, which may have been
+     preventing discrete GPUs from entering a lower power state.
+     It also moves the freeze fix by a couple of lines so as to match the
+     current upstream merge proposals but I doubt that has any behavioural
+     impact.
+Checksums-Sha1:
+ 20fb61f14dcfab345d1f6220c76648214db22a81 133448 gir1.2-mutter-13_45.0-1_amd64.deb
+ 1f3fdd8648915a4d5049e61b1e2e28dedf470d48 6077404 libmutter-13-0-dbgsym_45.0-1_amd64.deb
+ 7bb2dfcf018760a439ecc7c852618d27ad350df1 1361564 libmutter-13-0_45.0-1_amd64.deb
+ 131f2c7abfb23075491c93dc0591f27d9e4514e0 490460 libmutter-13-dev_45.0-1_amd64.deb
+ 3152d035c26ba9dbb289185bc41b931d88f39f88 162328 libmutter-test-13-dbgsym_45.0-1_amd64.deb
+ 80839a2a60aca3cdc54fdbbfe7d719d47bc0638e 65808 libmutter-test-13_45.0-1_amd64.deb
+ d1c8f3e31865bf8db995d5cd55bc4d3ad50a75c4 1194084 mutter-13-tests-dbgsym_45.0-1_amd64.deb
+ a03158c3bb51a0dd9b793b9952c66a736b3e1ef9 314696 mutter-13-tests_45.0-1_amd64.deb
+ dec7722bf54a677c61845d1cd3bc971863c9eda0 41412 mutter-common-bin-dbgsym_45.0-1_amd64.deb
+ 6086da944b6931e605a2911078d497eca8577b08 40680 mutter-common-bin_45.0-1_amd64.deb
+ a21551e2edc4309c054f7be8d862947398425244 469700 mutter-common_45.0-1_all.deb
+ df4fadc6faa22bf247b087bdb07b0020c1396633 39464 mutter-dbgsym_45.0-1_amd64.deb
+ dd1720874a0b58da246c2e698b64b8cf619d9cd4 21417 mutter_45.0-1_amd64.buildinfo
+ 629fb888cd5a7e8f90ce838a586125b2baa43400 136640 mutter_45.0-1_amd64.deb
+Checksums-Sha256:
+ c04f9178d7f8ee0be76ef039c8fd4566fad84ba58fa08968e043ee0f8328bf33 133448 gir1.2-mutter-13_45.0-1_amd64.deb
+ 63030a2060000d44edba76c216ddfa3eda0696d889aaefc03f19dba011bfc34d 6077404 libmutter-13-0-dbgsym_45.0-1_amd64.deb
+ 12e9634bf33922b7702bb71a962560b5d58d9e823ccd6dedd3d57ac6797bf224 1361564 libmutter-13-0_45.0-1_amd64.deb
+ 8d6b6d587e6f3768c9f724cf7c073a0560700b9334a3e0a8a48c69eaa5768181 490460 libmutter-13-dev_45.0-1_amd64.deb
+ 755ae2ba97701c7bf541a236c10b945c51bff30cdd33195a0a636ef765077180 162328 libmutter-test-13-dbgsym_45.0-1_amd64.deb
+ 034053b0d9b1a38cbf2e9cefa623f1e14e7b276015ff5eba8a85d72fc1f3be3a 65808 libmutter-test-13_45.0-1_amd64.deb
+ 88f9556cb90ff699f3d9318734f1de2034065e8ccfd3c32d9b20b264d9aaf643 1194084 mutter-13-tests-dbgsym_45.0-1_amd64.deb
+ c8fa7e89aed245305fbf7ef85b788aabef74615915ecc852b0c521587309a190 314696 mutter-13-tests_45.0-1_amd64.deb
+ dad134f094cac5a2fd08418824cb53d00dc49bf61aac2bfe503ac23b3839aeab 41412 mutter-common-bin-dbgsym_45.0-1_amd64.deb
+ c57536a77efa9e1c7ec72af8ff3b2bde3bf156d0192f65d11d9f8acf742911c5 40680 mutter-common-bin_45.0-1_amd64.deb
+ bea2656e6905599bde5e80b43dc8fbb414c613c89fb68f491fc3bc1d2e41671a 469700 mutter-common_45.0-1_all.deb
+ f6ddd762b69adc5408aa45972b354c8ff40ae0406964e87eb588b08bfdb1bf49 39464 mutter-dbgsym_45.0-1_amd64.deb
+ 37270725724e9c82380f9ef0ca916d0dddb83800277f1327227041845ed956f2 21417 mutter_45.0-1_amd64.buildinfo
+ 98a7bc72996866b5f7c250f09323550498487abe392c20427916d7f6db014f1d 136640 mutter_45.0-1_amd64.deb
+Files:
+ 1c9b7999717f7653defcc0e054050a91 133448 introspection optional gir1.2-mutter-13_45.0-1_amd64.deb
+ ac201f732389fad157b3605b358c7c9a 6077404 debug optional libmutter-13-0-dbgsym_45.0-1_amd64.deb
+ bf050c7fccff9385571cb06ad90c4325 1361564 libs optional libmutter-13-0_45.0-1_amd64.deb
+ 44e60b3ac90586aca649f1000634e5de 490460 libdevel optional libmutter-13-dev_45.0-1_amd64.deb
+ 0fcccd46eba9cac5f322157fd99c5bb1 162328 debug optional libmutter-test-13-dbgsym_45.0-1_amd64.deb
+ adc4879937fb12ef6ebb502a36b374d5 65808 libs optional libmutter-test-13_45.0-1_amd64.deb
+ bdb24729ad576f9ab5fcd276d621a67d 1194084 debug optional mutter-13-tests-dbgsym_45.0-1_amd64.deb
+ a0f4c3e28ea703c5eea53be39f18f2f8 314696 x11 optional mutter-13-tests_45.0-1_amd64.deb
+ 168611219acbcc88dba4559661f0ea30 41412 debug optional mutter-common-bin-dbgsym_45.0-1_amd64.deb
+ 308c2378ee0ed6501578c39ebddcab05 40680 misc optional mutter-common-bin_45.0-1_amd64.deb
+ e902e633d09f8154657d931e2974e904 469700 misc optional mutter-common_45.0-1_all.deb
+ 5dfc213e9b5abaff0aef85f7574b2f6b 39464 debug optional mutter-dbgsym_45.0-1_amd64.deb
+ c468e494761b99b066935fcfb6b220a6 21417 x11 optional mutter_45.0-1_amd64.buildinfo
+ 958b736ddbe599e839dd7a9aee9b53b2 136640 x11 optional mutter_45.0-1_amd64.deb

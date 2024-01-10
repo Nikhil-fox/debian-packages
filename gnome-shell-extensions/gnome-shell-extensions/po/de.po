@@ -1,0 +1,366 @@
+# German translation for gnome-shell-extensions.
+# Copyright (C) 2011 gnome-shell-extensions's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-shell-extensions package.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2011-2013, 2017.
+# Christian Kirbach <Christian.Kirbach@googlemail.com>, 2011, 2012, 2022.
+# Benjamin Steinwender <b@stbe.at>, 2013.
+# Wolfgang Stöggl <c72578@yahoo.de>, 2014.
+# Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>, 2017.
+# Tim Sabsch <tim@sabsch.com>, 2019-2020.
+# Philipp Kiemle <philipp.kiemle@gmail.com>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extensions master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-shell-extensions/"
+"issues\n"
+"POT-Creation-Date: 2022-03-07 15:35+0000\n"
+"PO-Revision-Date: 2022-03-10 22:26+0100\n"
+"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
+"Language-Team: Deutsch <gnome-de@gnome.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: data/gnome-classic.desktop.in:3
+msgid "GNOME Classic"
+msgstr "GNOME Classic"
+
+#: data/gnome-classic.desktop.in:4 data/gnome-classic-wayland.desktop.in:4
+#: data/gnome-classic-xorg.desktop.in:4
+msgid "This session logs you into GNOME Classic"
+msgstr "Diese Sitzung meldet Sie in GNOME Classic an"
+
+#: data/gnome-classic-wayland.desktop.in:3
+msgid "GNOME Classic on Wayland"
+msgstr "GNOME Classic unter Wayland"
+
+#: data/gnome-classic-xorg.desktop.in:3
+msgid "GNOME Classic on Xorg"
+msgstr "GNOME Classic unter Xorg"
+
+#: extensions/apps-menu/extension.js:118
+msgid "Favorites"
+msgstr "Favoriten"
+
+#: extensions/apps-menu/extension.js:379
+msgid "Applications"
+msgstr "Anwendungen"
+
+#: extensions/auto-move-windows/org.gnome.shell.extensions.auto-move-windows.gschema.xml:6
+msgid "Application and workspace list"
+msgstr "Anwendungs- und Arbeitsflächenliste"
+
+#: extensions/auto-move-windows/org.gnome.shell.extensions.auto-move-windows.gschema.xml:7
+msgid ""
+"A list of strings, each containing an application id (desktop file name), "
+"followed by a colon and the workspace number"
+msgstr ""
+"Eine Liste aus Zeichenketten, wovon jede eine Anwendungskennung (*.desktop-"
+"Datei) enthält, gefolgt von einem Doppelpunkt und der Nummer der "
+"Arbeitsfläche"
+
+#: extensions/auto-move-windows/prefs.js:152
+msgid "Workspace Rules"
+msgstr "Arbeitsfläche-Regeln"
+
+#: extensions/auto-move-windows/prefs.js:306
+msgid "Add Rule"
+msgstr "Regel hinzufügen"
+
+#. TRANSLATORS: %s is the filesystem name
+#: extensions/drive-menu/extension.js:126
+#: extensions/places-menu/placeDisplay.js:210
+#, javascript-format
+msgid "Ejecting drive “%s” failed:"
+msgstr "Auswerfen von Laufwerk »%s« schlug fehl:"
+
+#: extensions/drive-menu/extension.js:145
+msgid "Removable devices"
+msgstr "Wechseldatenträger"
+
+#: extensions/drive-menu/extension.js:167
+msgid "Open Files"
+msgstr "Dateien öffnen"
+
+#: extensions/native-window-placement/org.gnome.shell.extensions.native-window-placement.gschema.xml:5
+msgid "Use more screen for windows"
+msgstr "Mehr Bildschirmbereich für Fenster verwenden"
+
+#: extensions/native-window-placement/org.gnome.shell.extensions.native-window-placement.gschema.xml:6
+msgid ""
+"Try to use more screen for placing window thumbnails by adapting to screen "
+"aspect ratio, and consolidating them further to reduce the bounding box. "
+"This setting applies only with the natural placement strategy."
+msgstr ""
+"Versuchen, mehr Bildschirmfläche zum Platzieren der Fenstervorschaubilder zu "
+"verwenden, indem das Bildschirmseitenverhältnis berücksichtigt wird und "
+"diese stärker zusammengelegt werden, um den umgebenden Rahmen zu "
+"verkleinern. Diese Einstellung betrifft nur den natürlichen "
+"Platzierungsalgorithmus."
+
+#: extensions/native-window-placement/org.gnome.shell.extensions.native-window-placement.gschema.xml:11
+msgid "Place window captions on top"
+msgstr "Fensterbeschriftungen oben platzieren"
+
+#: extensions/native-window-placement/org.gnome.shell.extensions.native-window-placement.gschema.xml:12
+msgid ""
+"If true, place window captions on top the respective thumbnail, overriding "
+"shell default of placing it at the bottom. Changing this setting requires "
+"restarting the shell to have any effect."
+msgstr ""
+"Falls wahr, so werden die Fensterbeschriftungen über dem zugehörigen "
+"Vorschaubild platziert und damit die Voreinstellung der Shell übergangen. "
+"Eine Änderungseinstellung tritt erst mit einem Neustart der Shell in Kraft."
+
+#: extensions/places-menu/extension.js:94
+#: extensions/places-menu/extension.js:97
+msgid "Places"
+msgstr "Orte"
+
+#: extensions/places-menu/placeDisplay.js:49
+#, javascript-format
+msgid "Failed to launch “%s”"
+msgstr "Starten von »%s« fehlgeschlagen"
+
+#: extensions/places-menu/placeDisplay.js:64
+#, javascript-format
+msgid "Failed to mount volume for “%s”"
+msgstr "Datenträger für »%s« konnte nicht eingebunden werden"
+
+#: extensions/places-menu/placeDisplay.js:125
+#: extensions/places-menu/placeDisplay.js:148
+msgid "Computer"
+msgstr "Rechner"
+
+#: extensions/places-menu/placeDisplay.js:336
+msgid "Home"
+msgstr "Persönlicher Ordner"
+
+#: extensions/places-menu/placeDisplay.js:381
+msgid "Browse Network"
+msgstr "Netzwerk durchsuchen"
+
+#: extensions/screenshot-window-sizer/org.gnome.shell.extensions.screenshot-window-sizer.gschema.xml:7
+msgid "Cycle Screenshot Sizes"
+msgstr "Bildschirmfotogrößen nacheinander anzeigen"
+
+#: extensions/screenshot-window-sizer/org.gnome.shell.extensions.screenshot-window-sizer.gschema.xml:11
+msgid "Cycle Screenshot Sizes Backward"
+msgstr "Bildschirmfotogrößen in umgekehrter Reihenfolge anzeigen"
+
+#: extensions/user-theme/org.gnome.shell.extensions.user-theme.gschema.xml:5
+msgid "Theme name"
+msgstr "Themenname"
+
+#: extensions/user-theme/org.gnome.shell.extensions.user-theme.gschema.xml:6
+msgid "The name of the theme, to be loaded from ~/.themes/name/gnome-shell"
+msgstr ""
+"Der Name des Themas, welches aus ~/.themes/name/gnome-shell geladen werden "
+"soll"
+
+#: extensions/window-list/extension.js:72
+msgid "Close"
+msgstr "Schließen"
+
+#: extensions/window-list/extension.js:92
+msgid "Unminimize"
+msgstr "Minimieren rückgängig"
+
+#: extensions/window-list/extension.js:92
+msgid "Minimize"
+msgstr "Minimieren"
+
+#: extensions/window-list/extension.js:99
+msgid "Unmaximize"
+msgstr "Maximieren rückgängig"
+
+#: extensions/window-list/extension.js:99
+msgid "Maximize"
+msgstr "Maximieren"
+
+#: extensions/window-list/extension.js:441
+msgid "Minimize all"
+msgstr "Alle minimieren"
+
+#: extensions/window-list/extension.js:447
+msgid "Unminimize all"
+msgstr "Alle minimieren rückgängig"
+
+#: extensions/window-list/extension.js:453
+msgid "Maximize all"
+msgstr "Alle maximieren"
+
+#: extensions/window-list/extension.js:461
+msgid "Unmaximize all"
+msgstr "Alle maximieren rückgängig"
+
+#: extensions/window-list/extension.js:469
+msgid "Close all"
+msgstr "Alle schließen"
+
+#: extensions/window-list/extension.js:753
+msgid "Window List"
+msgstr "Fensterliste"
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:12
+msgid "When to group windows"
+msgstr "Legt fest, wann Fenster gruppiert werden"
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:13
+msgid ""
+"Decides when to group windows from the same application on the window list. "
+"Possible values are “never”, “auto” and “always”."
+msgstr ""
+"Legt fest, ob Fenster der gleichen Anwendung in der Fensterliste gruppiert "
+"werden sollen. Mögliche Werte sind »never« (nie), »auto« (automatisch) und "
+"»always« (immer)."
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:20
+#: extensions/window-list/prefs.js:79
+msgid "Show windows from all workspaces"
+msgstr "Fenster von allen Arbeitsflächen anzeigen"
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:21
+msgid "Whether to show windows from all workspaces or only the current one."
+msgstr ""
+"Legt fest, ob Fenster von allen oder nur der aktuellen Arbeitsflächen "
+"angezeigt werden."
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:27
+msgid "Show the window list on all monitors"
+msgstr "Die Fensterliste auf allen Bildschirmen anzeigen"
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:28
+msgid ""
+"Whether to show the window list on all connected monitors or only on the "
+"primary one."
+msgstr ""
+"Legt fest, ob die Fensterliste auf allen angeschlossenen Bildschirmen "
+"angezeigt wird oder nur auf dem Primären."
+
+#: extensions/window-list/prefs.js:35
+msgid "Window Grouping"
+msgstr "Fenstergruppierung"
+
+#: extensions/window-list/prefs.js:40
+msgid "Never group windows"
+msgstr "Fenster niemals gruppieren"
+
+#: extensions/window-list/prefs.js:41
+msgid "Group windows when space is limited"
+msgstr "Fenster bei Platzmangel gruppieren"
+
+#: extensions/window-list/prefs.js:42
+msgid "Always group windows"
+msgstr "Fenster immer gruppieren"
+
+#: extensions/window-list/prefs.js:66
+msgid "Show on all monitors"
+msgstr "Auf allen Bildschirmen anzeigen"
+
+#: extensions/window-list/workspaceIndicator.js:261
+#: extensions/workspace-indicator/extension.js:266
+msgid "Workspace Indicator"
+msgstr "Arbeitsflächenindikator"
+
+#: extensions/workspace-indicator/prefs.js:62
+#, javascript-format
+msgid "Workspace %d"
+msgstr "Arbeitsfläche %d"
+
+#: extensions/workspace-indicator/prefs.js:129
+msgid "Workspace Names"
+msgstr "Namen der Arbeitsflächen"
+
+#: extensions/workspace-indicator/prefs.js:255
+msgid "Add Workspace"
+msgstr "Arbeitsfläche hinzufügen"
+
+#~ msgid "Application"
+#~ msgstr "Anwendung"
+
+#~ msgid "Create new matching rule"
+#~ msgstr "Neue Übereinstimmungsregel erstellen"
+
+#~ msgid "Add"
+#~ msgstr "Hinzufügen"
+
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgid "Attach modal dialog to the parent window"
+#~ msgstr "Einen modalen Dialog an das übergeordnete Fenster anhängen"
+
+#~ msgid ""
+#~ "This key overrides the key in org.gnome.mutter when running GNOME Shell."
+#~ msgstr ""
+#~ "Dieser Schlüssel überschreibt den Schlüssel in »org.gnome.mutter«, wenn "
+#~ "die GNOME-Shell ausgeführt wird."
+
+#~ msgid "Arrangement of buttons on the titlebar"
+#~ msgstr "Anordnung von Knöpfen auf der Titelleiste"
+
+#~ msgid ""
+#~ "This key overrides the key in org.gnome.desktop.wm.preferences when "
+#~ "running GNOME Shell."
+#~ msgstr ""
+#~ "Dieser Schlüssel überschreibt den Schlüssel in »org.gnome.desktop.wm."
+#~ "preferences«, wenn die GNOME-Shell ausgeführt wird."
+
+# identisch zum Schüssel in »gnome-shell«
+#~ msgid "Enable edge tiling when dropping windows on screen edges"
+#~ msgstr ""
+#~ "Größenanpassung aktivieren, wenn ein Fenster an die Bildschirmkante "
+#~ "verschoben wird"
+
+#~ msgid "Workspaces only on primary monitor"
+#~ msgstr "Arbeitsflächen nur auf dem Primärmonitor"
+
+#~ msgid "Delay focus changes in mouse mode until the pointer stops moving"
+#~ msgstr ""
+#~ "Fokuswechsel im Mausmodus verzögern, bis sich der Zeiger nicht mehr "
+#~ "bewegt."
+
+#~ msgid "Thumbnail only"
+#~ msgstr "Nur Vorschaubild"
+
+#~ msgid "Application icon only"
+#~ msgstr "Nur Anwendungssymbol"
+
+#~ msgid "Thumbnail and application icon"
+#~ msgstr "Vorschaubild und Anwendungssymbol"
+
+#~ msgid "Present windows as"
+#~ msgstr "Fenster darstellen als"
+
+#~ msgid "Activities Overview"
+#~ msgstr "Aktivitäten-Übersicht"
+
+#~ msgid "Hello, world!"
+#~ msgstr "Hallo Welt!"
+
+#~ msgid "Alternative greeting text."
+#~ msgstr "Alternativer Begrüßungstext."
+
+#~ msgid ""
+#~ "If not empty, it contains the text that will be shown when clicking on "
+#~ "the panel."
+#~ msgstr ""
+#~ "Falls nicht leer, ist dies der Text, der beim Anklicken des Panels "
+#~ "angezeigt wird."
+
+#~ msgid "Message"
+#~ msgstr "Nachricht"
+
+#~ msgid ""
+#~ "Example aims to show how to build well behaved extensions for the Shell "
+#~ "and as such it has little functionality on its own.\n"
+#~ "Nevertheless it’s possible to customize the greeting message."
+#~ msgstr ""
+#~ "Das Beispiel soll zeigen, wie sich korrekt verhaltende Erweiterungen für "
+#~ "die Shell erstellt werden. Es enthält grundlegende Funktionalität.\n"
+#~ "Es ist möglich, die Begrüßungsnachricht zu ändern."

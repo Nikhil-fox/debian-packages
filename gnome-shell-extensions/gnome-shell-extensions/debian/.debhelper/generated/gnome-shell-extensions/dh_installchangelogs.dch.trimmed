@@ -1,0 +1,332 @@
+gnome-shell-extensions (45.0-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Mon, 18 Sep 2023 08:45:42 -0400
+
+gnome-shell-extensions (45~beta-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Mon, 21 Aug 2023 10:17:23 -0400
+
+gnome-shell-extensions (44.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Upload to unstable (part of transition: #1043144)
+
+ -- Simon McVittie <smcv@debian.org>  Sun, 20 Aug 2023 23:04:08 +0100
+
+gnome-shell-extensions (44.0-1) experimental; urgency=medium
+
+  * New upstream release
+  * debian/control.in: Bump minimum meson to 0.58.0
+  * debian/control.in: Build-Depend on libglib2.0-bin
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 27 Mar 2023 08:50:32 -0400
+
+gnome-shell-extensions (44~rc-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 07 Mar 2023 12:20:00 -0500
+
+gnome-shell-extensions (44~beta-1) experimental; urgency=medium
+
+  [ Jeremy Bicha ]
+  * New upstream release
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster (oldstable)
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Wed, 15 Feb 2023 11:01:26 -0500
+
+gnome-shell-extensions (43.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 22 Nov 2022 14:14:48 -0500
+
+gnome-shell-extensions (43.0-2) unstable; urgency=medium
+
+  * Release to unstable
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 27 Sep 2022 19:13:41 -0400
+
+gnome-shell-extensions (43.0-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 19 Sep 2022 10:57:41 -0400
+
+gnome-shell-extensions (43~rc-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 06 Sep 2022 14:39:00 -0400
+
+gnome-shell-extensions (43~beta-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Sun, 21 Aug 2022 10:59:20 -0400
+
+gnome-shell-extensions (42.3-1) unstable; urgency=medium
+
+  * New upstream release (LP: #1981606)
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Wed, 13 Jul 2022 17:49:05 +0200
+
+gnome-shell-extensions (42.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Fri, 03 Jun 2022 09:23:28 -0400
+
+gnome-shell-extensions (42.1-1) unstable; urgency=medium
+
+  * New upstream release (LP: #1972365)
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 09 May 2022 08:09:32 -0400
+
+gnome-shell-extensions (42.0-2) unstable; urgency=medium
+
+  * Release to unstable
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 28 Mar 2022 11:18:12 -0400
+
+gnome-shell-extensions (42.0-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Jeremy Bicha <jeremy.bicha@canonical.com>  Mon, 14 Mar 2022 11:30:18 -0400
+
+gnome-shell-extensions (42~rc-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Jeremy Bicha <jeremy.bicha@canonical.com>  Tue, 08 Mar 2022 17:54:41 -0500
+
+gnome-shell-extensions (42~beta-1) experimental; urgency=medium
+
+  * New upstream release:
+    - Use libadwaita for preferences
+    - window-list: Fix on-screen keyboard
+    - native-window-placement: Fix distorted layout in app grid
+  * debian/control: Depend on libadwaita and gtk-4 (instead of gtk-3)
+  * debian/patches: Drop applied upstream
+
+ -- Marco Trevisan (Treviño) <marco@ubuntu.com>  Wed, 23 Feb 2022 07:35:20 +0100
+
+gnome-shell-extensions (41.1-2) unstable; urgency=medium
+
+  * Team upload
+  * d/p/meson-Drop-unused-argument-for-i18n.merge_file.patch:
+    Backport patch from upstream to fix FBTFS with Meson 0.61
+    (Closes: #1005534)
+
+ -- Simon McVittie <smcv@debian.org>  Tue, 15 Feb 2022 11:18:30 +0000
+
+gnome-shell-extensions (41.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sun, 12 Dec 2021 20:30:17 -0500
+
+gnome-shell-extensions (41.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Upload to unstable
+
+ -- Simon McVittie <smcv@debian.org>  Sat, 16 Oct 2021 20:06:04 +0100
+
+gnome-shell-extensions (41.0-1) experimental; urgency=medium
+
+  * New upstream release
+  * debian/control.in: Bump minimum meson to 0.53.0
+  * Bump Standards-Version to 4.6.0
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sun, 10 Oct 2021 17:04:15 -0400
+
+gnome-shell-extensions (40.4-3) unstable; urgency=medium
+
+  * Team upload
+  * Release to unstable (transition: #992870)
+
+ -- Simon McVittie <smcv@debian.org>  Sat, 11 Sep 2021 21:52:59 +0100
+
+gnome-shell-extensions (40.4-2) experimental; urgency=medium
+
+  [ Jeremy Bicha ]
+  * New upstream release
+  * debian/copyright: Add gnome-classic.css to Files-Excluded
+  * Revert "debian/control: Don't build depend on sassc"
+  * This ensures we compile the CSS file from source.
+
+  [ Marco Trevisan (Treviño) ]
+  * debian/control: Support pre-release versions of gnome-shell
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sun, 29 Aug 2021 09:16:04 -0400
+
+gnome-shell-extensions (40.1-1) experimental; urgency=medium
+
+  * New upstream release
+  * debian/control:
+    - Update runtime dependencies to match code.
+      Found grepping code via:
+        grep "imports\.gi" --include "*.js" -rh -B2 . \
+           | grep -o "\b[A-Z][A-Za-z]\+\b" | sed "s/,\?\s*$//g" | sort -u
+    - Don't build depend on sassc.
+      Since we compile from tarball, this is not needed anymore given that
+      compiled css are provided already.
+    - Build-depend on dh-sequence-gnome 0.22.
+      It's the first version that supports new GNOME versioning schema.
+
+ -- Marco Trevisan (Treviño) <marco@ubuntu.com>  Sun, 30 May 2021 20:05:13 +0200
+
+gnome-shell-extensions (3.38.2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Standards-Version: 4.5.1 (no changes required)
+  * d/gbp.conf: Use upstream/3.38.x branch.
+    Version 40~alpha was already released upstream.
+
+ -- Simon McVittie <smcv@debian.org>  Thu, 03 Dec 2020 10:17:58 +0000
+
+gnome-shell-extensions (3.38.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Recommend gnome-shell-extension-prefs instead of gnome-tweaks
+
+ -- Jeremy Bicha <jbicha@debian.org>  Tue, 06 Oct 2020 17:44:30 -0400
+
+gnome-shell-extensions (3.38.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Revert "debian/watch: Watch for unstable releases"
+  * Release to unstable
+
+ -- Simon McVittie <smcv@debian.org>  Fri, 25 Sep 2020 23:00:58 +0100
+
+gnome-shell-extensions (3.38.0-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream release
+    - Translation updates
+  * d/upstream/metadata: Add
+  * Update standards version to 4.5.0, no changes needed
+  * Fix gnome-classic regression in 3.37.91-1.
+    gnome-session no longer takes the `--session gnome-classic` argument
+    when running in classic mode.
+
+ -- Simon McVittie <smcv@debian.org>  Tue, 22 Sep 2020 11:49:24 +0100
+
+gnome-shell-extensions (3.37.91-1) experimental; urgency=medium
+
+  * New upstream release:
+    - drive-menu: Emphasize eject buttons
+    - user-theme: Add preference dialog
+    - window-list:
+      + Fix inconsistent state in preference dialog
+      + auto-move: Modernize preference dialogs
+    - workspace-indicator: Overhaul preference dialog
+    - user-theme: Support session mode styles
+    - Adjust to gnome-shell changes
+  * debian/patches: Refresh
+  * debian/control: B-D on debhelper 13
+  * debian/rules: Don't override dh_missing equal default behavior
+  * debian/control: Remove useless dependency on clutter gir
+
+ -- Marco Trevisan (Treviño) <marco@ubuntu.com>  Thu, 27 Aug 2020 17:39:42 +0200
+
+gnome-shell-extensions (3.36.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Laurent Bigonville <bigon@debian.org>  Sun, 03 May 2020 10:02:18 +0200
+
+gnome-shell-extensions (3.36.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+    - Update Ukrainian translation
+    - Update Gnome Shell CSS
+  * Upload to unstable (part of transition: #954422)
+
+ -- Simon McVittie <smcv@debian.org>  Fri, 10 Apr 2020 15:12:29 +0100
+
+gnome-shell-extensions (3.36.0-1) experimental; urgency=medium
+
+  * New upstream translation release
+
+ -- Iain Lane <laney@debian.org>  Mon, 16 Mar 2020 12:39:02 +0000
+
+gnome-shell-extensions (3.35.91-1) experimental; urgency=medium
+
+  * New upstream release
+    - Fixes and adjustments to latest gnome-shell
+
+ -- Marco Trevisan (Treviño) <marco@ubuntu.com>  Mon, 24 Feb 2020 18:29:29 +0000
+
+gnome-shell-extensions (3.34.2-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/control.in: Bump Standards-Version to 4.4.1 (no further changes)
+
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 30 Dec 2019 00:51:13 +0100
+
+gnome-shell-extensions (3.34.1-2) unstable; urgency=high
+
+  * New upstream release
+    - Fix GNOME Classic session's compatibility with gnome-setting-daemon 3.34
+
+ -- Jeremy Bicha <jbicha@debian.org>  Tue, 08 Oct 2019 22:49:14 -0400
+
+gnome-shell-extensions (3.34.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Mon, 30 Sep 2019 17:27:38 +0200
+
+gnome-shell-extensions (3.34.0-1) experimental; urgency=medium
+
+  * New upstream translation release
+
+ -- Iain Lane <laney@debian.org>  Tue, 10 Sep 2019 10:59:31 +0100
+
+gnome-shell-extensions (3.33.92-1) experimental; urgency=medium
+
+  * New upstream bugfix / translation releases
+
+ -- Iain Lane <laney@debian.org>  Thu, 05 Sep 2019 18:22:14 +0100
+
+gnome-shell-extensions (3.33.90-1) experimental; urgency=medium
+
+  [ Marco Trevisan (Treviño) ]
+  * New upstream release
+    + window-list: Support showing windows from all workspaces
+    + Make GNOME Classic more classic:
+      - Disable GNOME 3 overview
+      - Add window picker button to window list
+      - Style improvements and fixes
+      - Support horizontal workspace layout in window list
+      - Add draggable previews to window list workspace switcher
+      - Arrange workspaces horizontally
+    + workspace-indicator: Support horizontal workspace layout
+    + workspace-indicator: Add draggable previews
+    + Fix windowsNavigator extension after ES6 port
+    + screenshot-window-sizer: Add phone screenshot sizes
+
+  [ Iain Lane ]
+  * rules: Build all extensions via the upstream build system. We don't need
+    to hardcode the list to build, as the build system provides a way to build
+    'all' extensions.
+  * rules: Build with --fail-missing
+  * compat, control, rules: Move to compat 12 and specifying via build-deps
+
+ -- Iain Lane <laney@debian.org>  Tue, 13 Aug 2019 11:59:22 +0100
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog gnome-shell-extensions`.

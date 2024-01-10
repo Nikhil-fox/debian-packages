@@ -1,0 +1,439 @@
+# Finnish translation of gnome-shell-extensions.
+# Copyright (C) 2011 Ville-Pekka Vainio
+# This file is distributed under the same license as the gnome-shell-extensions package.
+# Gnome 2012-03 Finnish translation sprint participants:
+# Niklas Laxström
+# Ville-Pekka Vainio
+# Ville-Pekka Vainio <vpvainio@iki.fi>, 2011.
+# Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2012, 2013, 2014, 2015, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extensions\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-shell-extensions/"
+"issues\n"
+"POT-Creation-Date: 2021-11-06 14:08+0000\n"
+"PO-Revision-Date: 2022-02-27 18:54+0200\n"
+"Last-Translator: JR-Fi <starman@starman.fi>\n"
+"Language-Team: suomi <lokalisointi-lista@googlegroups.com>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Project-Style: gnome\n"
+"X-POT-Import-Date: 2012-03-05 15:06:12+0000\n"
+
+#: data/gnome-classic.desktop.in:3
+msgid "GNOME Classic"
+msgstr "Perinteinen Gnome"
+
+#: data/gnome-classic.desktop.in:4 data/gnome-classic-wayland.desktop.in:4
+#: data/gnome-classic-xorg.desktop.in:4
+msgid "This session logs you into GNOME Classic"
+msgstr "Tämä istunto kirjaa sinut perinteiseen Gnomeen"
+
+#: data/gnome-classic-wayland.desktop.in:3
+msgid "GNOME Classic on Wayland"
+msgstr "Perinteinen Gnome Waylandia käyttäen"
+
+#: data/gnome-classic-xorg.desktop.in:3
+msgid "GNOME Classic on Xorg"
+msgstr "Perinteinen Gnome Xorgia käyttäen"
+
+#: extensions/apps-menu/extension.js:112
+msgid "Favorites"
+msgstr "Suosikit"
+
+#: extensions/apps-menu/extension.js:366
+msgid "Applications"
+msgstr "Sovellukset"
+
+#: extensions/auto-move-windows/org.gnome.shell.extensions.auto-move-windows.gschema.xml:6
+msgid "Application and workspace list"
+msgstr "Sovellus- ja työtilaluettelo"
+
+#: extensions/auto-move-windows/org.gnome.shell.extensions.auto-move-windows.gschema.xml:7
+msgid ""
+"A list of strings, each containing an application id (desktop file name), "
+"followed by a colon and the workspace number"
+msgstr ""
+"Lista merkkijonoja, jossa jokainen on ohjelman tunnus (työpöydän "
+"tiedostonimi), jota seuraa kaksoispiste ja työtilan numero"
+
+#: extensions/auto-move-windows/prefs.js:34
+msgid "Workspace Rules"
+msgstr "Työtilojen säännöt"
+
+#: extensions/auto-move-windows/prefs.js:236
+msgid "Add Rule"
+msgstr "Lisää sääntö"
+
+#. TRANSLATORS: %s is the filesystem name
+#: extensions/drive-menu/extension.js:133
+#: extensions/places-menu/placeDisplay.js:233
+#, javascript-format
+msgid "Ejecting drive “%s” failed:"
+msgstr "Aseman “%s” irrottaminen epäonnistui:"
+
+#: extensions/drive-menu/extension.js:149
+msgid "Removable devices"
+msgstr "Erilliset tallennusvälineet"
+
+#: extensions/drive-menu/extension.js:171
+msgid "Open Files"
+msgstr "Avaa tiedostonhallinta"
+
+#: extensions/native-window-placement/org.gnome.shell.extensions.native-window-placement.gschema.xml:5
+msgid "Use more screen for windows"
+msgstr "Käytä enemmän tilaa ikkunoille"
+
+#: extensions/native-window-placement/org.gnome.shell.extensions.native-window-placement.gschema.xml:6
+msgid ""
+"Try to use more screen for placing window thumbnails by adapting to screen "
+"aspect ratio, and consolidating them further to reduce the bounding box. "
+"This setting applies only with the natural placement strategy."
+msgstr ""
+"Yritä käyttää enemmän näyttötilaa laittamalla ikkunoiden pikkukuvat "
+"huomioiden näyttösuhteen ja lähentämällä niitä vähentämällä rajaavaa "
+"laatikkoa. Tämä asetus toimii vain luonnollisen asettelutavan kanssa."
+
+#: extensions/native-window-placement/org.gnome.shell.extensions.native-window-placement.gschema.xml:11
+msgid "Place window captions on top"
+msgstr "Aseta ikkunoiden otsikkoteksti ylös"
+
+#: extensions/native-window-placement/org.gnome.shell.extensions.native-window-placement.gschema.xml:12
+msgid ""
+"If true, place window captions on top the respective thumbnail, overriding "
+"shell default of placing it at the bottom. Changing this setting requires "
+"restarting the shell to have any effect."
+msgstr ""
+"Jos tosi, ikkunan otsikkoteksti asetetaan ikkunan pienoiskuvan yläpuolelle. "
+"Tämä syrjäyttää oletusasetuksen, eli otsikkotekstin asettamisen pienoiskuvan "
+"alle. Tämän asetuksen muutos vaatii Gnomen uudelleenkäynnistyksen."
+
+#: extensions/places-menu/extension.js:88
+#: extensions/places-menu/extension.js:91
+msgid "Places"
+msgstr "Sijainnit"
+
+#: extensions/places-menu/placeDisplay.js:46
+#, javascript-format
+msgid "Failed to launch “%s”"
+msgstr "Kohteen “%s” käynnistys epäonnistui"
+
+#: extensions/places-menu/placeDisplay.js:61
+#, javascript-format
+msgid "Failed to mount volume for “%s”"
+msgstr "Taltion “%s” liittäminen epäonnistui"
+
+#: extensions/places-menu/placeDisplay.js:148
+#: extensions/places-menu/placeDisplay.js:171
+msgid "Computer"
+msgstr "Tietokone"
+
+#: extensions/places-menu/placeDisplay.js:359
+msgid "Home"
+msgstr "Koti"
+
+#: extensions/places-menu/placeDisplay.js:404
+msgid "Browse Network"
+msgstr "Selaa verkkoa"
+
+# Konteksti muutui hieman, kun tälle ilmaantui pari, jossa suunta on taaksepäin
+#: extensions/screenshot-window-sizer/org.gnome.shell.extensions.screenshot-window-sizer.gschema.xml:7
+msgid "Cycle Screenshot Sizes"
+msgstr "Vaihda kuvakaappausten kokojen välillä"
+
+#: extensions/screenshot-window-sizer/org.gnome.shell.extensions.screenshot-window-sizer.gschema.xml:11
+msgid "Cycle Screenshot Sizes Backward"
+msgstr "Vaihda kuvakaappausten kokojen välillä taaksepäin"
+
+#: extensions/user-theme/org.gnome.shell.extensions.user-theme.gschema.xml:5
+msgid "Theme name"
+msgstr "Teeman nimi"
+
+#: extensions/user-theme/org.gnome.shell.extensions.user-theme.gschema.xml:6
+msgid "The name of the theme, to be loaded from ~/.themes/name/gnome-shell"
+msgstr "Teeman nimi, ladataan sijainnista ~/.themes/name/gnome-shell"
+
+#: extensions/window-list/extension.js:72
+msgid "Close"
+msgstr "Sulje"
+
+#: extensions/window-list/extension.js:92
+msgid "Unminimize"
+msgstr "Palauta pienennys"
+
+#: extensions/window-list/extension.js:92
+msgid "Minimize"
+msgstr "Pienennä"
+
+#: extensions/window-list/extension.js:99
+msgid "Unmaximize"
+msgstr "Palauta suurennus"
+
+#: extensions/window-list/extension.js:99
+msgid "Maximize"
+msgstr "Suurenna"
+
+#: extensions/window-list/extension.js:434
+msgid "Minimize all"
+msgstr "Pienennä kaikki"
+
+#: extensions/window-list/extension.js:440
+msgid "Unminimize all"
+msgstr "Palauta kaikkien koko"
+
+#: extensions/window-list/extension.js:446
+msgid "Maximize all"
+msgstr "Suurenna kaikki"
+
+#: extensions/window-list/extension.js:454
+msgid "Unmaximize all"
+msgstr "Palauta kaikkien koko"
+
+#: extensions/window-list/extension.js:462
+msgid "Close all"
+msgstr "Sulje kaikki"
+
+#: extensions/window-list/extension.js:741
+msgid "Window List"
+msgstr "Ikkunaluettelo"
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:12
+msgid "When to group windows"
+msgstr "Milloin ikkunat ryhmitetään"
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:13
+msgid ""
+"Decides when to group windows from the same application on the window list. "
+"Possible values are “never”, “auto” and “always”."
+msgstr ""
+"Päättää milloin saman sovelluksen ikkunat ryhmitellään ikkunaluettelossa. "
+"Mahdolliset arvot ovat “never”, “auto” ja “always”."
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:20
+#: extensions/window-list/prefs.js:86
+msgid "Show windows from all workspaces"
+msgstr "Näytä ikkunat kaikista työtiloista"
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:21
+msgid "Whether to show windows from all workspaces or only the current one."
+msgstr ""
+"Näytetäänkö ikkunat kaikista työtiloista vai ainoastaan nykyisestä "
+"työtilasta."
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:27
+msgid "Show the window list on all monitors"
+msgstr "Näytä ikkunaluettelo kaikilla näytöillä"
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:28
+msgid ""
+"Whether to show the window list on all connected monitors or only on the "
+"primary one."
+msgstr ""
+"Näytetäänkö ikkunaluettelo kaikilla liitetyillä näytöillä vai ainoastaan "
+"ensisijaisella näytöllä."
+
+#: extensions/window-list/prefs.js:39
+msgid "Window Grouping"
+msgstr "Ikkunoiden ryhmitys"
+
+#: extensions/window-list/prefs.js:63
+msgid "Never group windows"
+msgstr "Älä ryhmitä ikkunoita koskaan"
+
+#: extensions/window-list/prefs.js:64
+msgid "Group windows when space is limited"
+msgstr "Ryhmitä ikkunat tilan ollessa rajallinen"
+
+#: extensions/window-list/prefs.js:65
+msgid "Always group windows"
+msgstr "Ryhmitä ikkunat aina"
+
+#: extensions/window-list/prefs.js:81
+msgid "Show on all monitors"
+msgstr "Näytä kaikilla näytöillä"
+
+#: extensions/window-list/workspaceIndicator.js:249
+#: extensions/workspace-indicator/extension.js:254
+msgid "Workspace Indicator"
+msgstr "Työtilan ilmaisin"
+
+#: extensions/workspace-indicator/prefs.js:33
+msgid "Workspace Names"
+msgstr "Työtilojen nimet"
+
+#: extensions/workspace-indicator/prefs.js:66
+#, javascript-format
+msgid "Workspace %d"
+msgstr "Työtila %d"
+
+#: extensions/workspace-indicator/prefs.js:207
+msgid "Add Workspace"
+msgstr "Lisää työtila"
+
+#~ msgid "Application"
+#~ msgstr "Sovellus"
+
+#~ msgid "Create new matching rule"
+#~ msgstr "Luo uusi vastaava sääntö"
+
+#~ msgid "Add"
+#~ msgstr "Lisää"
+
+#~ msgid "Name"
+#~ msgstr "Nimi"
+
+#~ msgid "Attach modal dialog to the parent window"
+#~ msgstr "Liitä modaali-ikkuna ylätason ikkunaan"
+
+#~ msgid "Arrangement of buttons on the titlebar"
+#~ msgstr "Painikkeiden järjestys otsikkopalkissa"
+
+#~ msgid "Workspaces only on primary monitor"
+#~ msgstr "Työtilat vain ensisijaisella näytöllä"
+
+#~ msgid "Delay focus changes in mouse mode until the pointer stops moving"
+#~ msgstr ""
+#~ "Aseta viive kohdistusmuutoksille hiiritilassa, kunnes hiiren osoitin "
+#~ "lopettaa liikkumisen"
+
+#~ msgid "Thumbnail only"
+#~ msgstr "Pelkkä pienoiskuva"
+
+#~ msgid "Application icon only"
+#~ msgstr "Pelkkä sovelluksen kuvake"
+
+#~ msgid "Thumbnail and application icon"
+#~ msgstr "Pienoiskuva ja sovelluksen kuvake"
+
+#~ msgid "Present windows as"
+#~ msgstr "Ikkunoiden esittäminen"
+
+#~ msgid "Activities Overview"
+#~ msgstr "Yleisnäkymä"
+
+#~ msgid "Hello, world!"
+#~ msgstr "Hei, maailma!"
+
+#~ msgid "Alternative greeting text."
+#~ msgstr "Vaihtoehtoinen tervehdysteksti."
+
+#~ msgid ""
+#~ "If not empty, it contains the text that will be shown when clicking on "
+#~ "the panel."
+#~ msgstr "Jos ei tyhjä, sisältää paneelia napsauttaessa näytettävän tekstin."
+
+#~ msgid "Message"
+#~ msgstr "Viesti"
+
+#~ msgid "CPU"
+#~ msgstr "Suoritin"
+
+#~ msgid "Memory"
+#~ msgstr "Muisti"
+
+#~ msgid "GNOME Shell Classic"
+#~ msgstr "Gnome Shell - perinteinen"
+
+#~ msgid "Window management and application launching"
+#~ msgstr "Ikkunoiden hallintaa ja sovellusten käynnistämistä"
+
+#~ msgid "Suspend"
+#~ msgstr "Valmiustila"
+
+#~ msgid "Hibernate"
+#~ msgstr "Lepotila"
+
+#~ msgid "Power Off"
+#~ msgstr "Sammuta"
+
+#~ msgid "Normal"
+#~ msgstr "Tavallinen"
+
+#~ msgid "Left"
+#~ msgstr "Vasen"
+
+#~ msgid "Right"
+#~ msgstr "Oikea"
+
+#~ msgid "Upside-down"
+#~ msgstr "Ylösalaisin"
+
+#~ msgid "Display"
+#~ msgstr "Näyttö"
+
+#~ msgid "Display Settings"
+#~ msgstr "Näytön asetukset"
+
+#~ msgid "Drag here to add favorites"
+#~ msgstr "Raahaa tähän lisätäksesi suosikkeihin"
+
+#~ msgid "New Window"
+#~ msgstr "Uusi ikkuna"
+
+#~ msgid "Quit Application"
+#~ msgstr "Lopeta ohjelma"
+
+#~ msgid "Remove from Favorites"
+#~ msgstr "Poista suosikeista"
+
+#~ msgid "Position of the dock"
+#~ msgstr "Telakan sijainti"
+
+#~ msgid ""
+#~ "Sets the position of the dock in the screen. Allowed values are 'right' "
+#~ "or 'left'"
+#~ msgstr ""
+#~ "Asettaa telakan sijainnin näytöllä. Sallitut arvot ovat 'right' tai 'left'"
+
+#~ msgid "Icon size"
+#~ msgstr "Kuvakkeiden koko"
+
+#~ msgid "Sets icon size of the dock."
+#~ msgstr "Asettaa telakan kuvakkeiden koon."
+
+#~ msgid "Enable/disable autohide"
+#~ msgstr "Automaattinen piilotus päälle/pois"
+
+#~ msgid "Autohide effect"
+#~ msgstr "Automaattisen piilotuksen tehoste"
+
+#~ msgid "Autohide duration"
+#~ msgstr "Automaattisen piilotuksen kesto"
+
+#~ msgid "Monitor"
+#~ msgstr "Näyttö"
+
+#~ msgid "%s is away."
+#~ msgstr "%s on poissa."
+
+#~ msgid "%s is offline."
+#~ msgstr "%s on poissa linjoilta."
+
+#~ msgid "%s is online."
+#~ msgstr "%s on linjoilla."
+
+#~ msgid "%s is busy."
+#~ msgstr "%s on kiireinen."
+
+#~ msgid "Devices"
+#~ msgstr "Laitteet"
+
+#~ msgid "Bookmarks"
+#~ msgstr "Kirjanmerkit"
+
+#~ msgid "Network"
+#~ msgstr "Verkko"
+
+#~ msgid "File System"
+#~ msgstr "Tiedostojärjestelmä"
+
+#~ msgid "The alt tab behaviour."
+#~ msgstr "Alt+tab-näppäinyhdistelmän toiminta."
+
+#~ msgid "Workspace & Icons"
+#~ msgstr "Työtila ja kuvakkeet"

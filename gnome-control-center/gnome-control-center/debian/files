@@ -1,0 +1,5 @@
+gnome-control-center-data_45.0-1_all.deb gnome optional
+gnome-control-center-dbgsym_45.0-1_amd64.deb debug optional automatic=yes
+gnome-control-center-dev_45.0-1_all.deb devel optional
+gnome-control-center_45.0-1_amd64.buildinfo gnome optional
+gnome-control-center_45.0-1_amd64.deb gnome optional

@@ -1,0 +1,6 @@
+gnome:Version=1:45~
+gnome:UpstreamVersion=45~
+gnome:NextVersion=1:46~
+gnome:NextUpstreamVersion=46~
+misc:Depends=
+misc:Pre-Depends=

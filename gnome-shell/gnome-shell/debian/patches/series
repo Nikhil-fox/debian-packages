@@ -1,0 +1,4 @@
+debian/gnome-shell-extension-prefs-Give-Debian-specific-advice.patch
+debian/Revert-build-Port-to-gcr4.patch
+debian/Revert-tests-Fail-on-warnings-too.patch
+Revert-keyboard-Spawn-tecla-to-show-keyboard-map.patch

@@ -1,0 +1,272 @@
+# Bulgarian translation for gnome-shell-extensions po-file.
+# Copyright (C) 2014, 2015, 2017 Free Software Foundation, Inc.
+# Copyright (C) 2021, 2022 Alexander Shopov <ash@kambanaria.org>.
+# This file is distributed under the same license as the gnome-shell-extensions package.
+# Ivaylo Valkov <ivaylo@e-valkov.org>, 2014.
+# Alexander Shopov <ash@kambanaria.org>, 2014, 2015, 2021, 2022.
+# Lyubomir Vasilev <lyubomirv@abv.bg>, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extensions master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-shell-extensions/"
+"issues\n"
+"POT-Creation-Date: 2022-02-12 20:25+0000\n"
+"PO-Revision-Date: 2022-02-13 11:40+0100\n"
+"Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
+"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/gnome-classic.desktop.in:3
+msgid "GNOME Classic"
+msgstr "Класически GNOME"
+
+#: data/gnome-classic.desktop.in:4 data/gnome-classic-wayland.desktop.in:4
+#: data/gnome-classic-xorg.desktop.in:4
+msgid "This session logs you into GNOME Classic"
+msgstr "Работната среда изглежда като класическия GNOME (2.x)"
+
+#: data/gnome-classic-wayland.desktop.in:3
+msgid "GNOME Classic on Wayland"
+msgstr "Класически GNOME в Wayland"
+
+#: data/gnome-classic-xorg.desktop.in:3
+msgid "GNOME Classic on Xorg"
+msgstr "Класически GNOME в Xorg"
+
+#: extensions/apps-menu/extension.js:112
+msgid "Favorites"
+msgstr "Любими"
+
+#: extensions/apps-menu/extension.js:370
+msgid "Applications"
+msgstr "Програми"
+
+#: extensions/auto-move-windows/org.gnome.shell.extensions.auto-move-windows.gschema.xml:6
+msgid "Application and workspace list"
+msgstr "Списък с програмите и работните плотове"
+
+#: extensions/auto-move-windows/org.gnome.shell.extensions.auto-move-windows.gschema.xml:7
+msgid ""
+"A list of strings, each containing an application id (desktop file name), "
+"followed by a colon and the workspace number"
+msgstr ""
+"Списък от низове. Всеки съдържа идентификатор на програма (име на файл „."
+"desktop“), следван от знака „:“ и номер на работен плот"
+
+#: extensions/auto-move-windows/prefs.js:19
+msgid "Workspace Rules"
+msgstr "Правила за работните плотове"
+
+#: extensions/auto-move-windows/prefs.js:245
+msgid "Add Rule"
+msgstr "Добавяне на правило"
+
+#. TRANSLATORS: %s is the filesystem name
+#: extensions/drive-menu/extension.js:123
+#: extensions/places-menu/placeDisplay.js:210
+#, javascript-format
+msgid "Ejecting drive “%s” failed:"
+msgstr "Неуспешно изваждане на устройство „%s“:"
+
+#: extensions/drive-menu/extension.js:139
+msgid "Removable devices"
+msgstr "Преносими медии"
+
+#: extensions/drive-menu/extension.js:161
+msgid "Open Files"
+msgstr "Отваряне на файлове"
+
+#: extensions/native-window-placement/org.gnome.shell.extensions.native-window-placement.gschema.xml:5
+msgid "Use more screen for windows"
+msgstr "Повече пространство за прозорците"
+
+#: extensions/native-window-placement/org.gnome.shell.extensions.native-window-placement.gschema.xml:6
+msgid ""
+"Try to use more screen for placing window thumbnails by adapting to screen "
+"aspect ratio, and consolidating them further to reduce the bounding box. "
+"This setting applies only with the natural placement strategy."
+msgstr ""
+"Използване на по-голяма част от екрана за поставянето на мини изображения "
+"чрез промяна на съотношението на страните и допълнително обединяване за "
+"смаляване на обхващащия ги правоъгълник. Тази настройка се прилага само при "
+"естествената стратегия за поставяне на прозорците."
+
+#: extensions/native-window-placement/org.gnome.shell.extensions.native-window-placement.gschema.xml:11
+msgid "Place window captions on top"
+msgstr "Заглавия на прозорците отгоре"
+
+#: extensions/native-window-placement/org.gnome.shell.extensions.native-window-placement.gschema.xml:12
+msgid ""
+"If true, place window captions on top the respective thumbnail, overriding "
+"shell default of placing it at the bottom. Changing this setting requires "
+"restarting the shell to have any effect."
+msgstr ""
+"Ако е истина, заглавията на прозорците се поставят над мини изображенията "
+"им, а не както е стандартно — отдолу. За прилагане на промяната на "
+"настройката трябва да рестартирате обвивката на GNOME."
+
+#: extensions/places-menu/extension.js:88
+#: extensions/places-menu/extension.js:91
+msgid "Places"
+msgstr "Места"
+
+#: extensions/places-menu/placeDisplay.js:49
+#, javascript-format
+msgid "Failed to launch “%s”"
+msgstr "Неуспешно стартиране на „%s“"
+
+#: extensions/places-menu/placeDisplay.js:64
+#, javascript-format
+msgid "Failed to mount volume for “%s”"
+msgstr "Неуспешно монтиране на тома „%s“"
+
+#: extensions/places-menu/placeDisplay.js:125
+#: extensions/places-menu/placeDisplay.js:148
+msgid "Computer"
+msgstr "Компютър"
+
+#: extensions/places-menu/placeDisplay.js:336
+msgid "Home"
+msgstr "Домашна папка"
+
+#: extensions/places-menu/placeDisplay.js:381
+msgid "Browse Network"
+msgstr "Мрежа"
+
+#: extensions/screenshot-window-sizer/org.gnome.shell.extensions.screenshot-window-sizer.gschema.xml:7
+msgid "Cycle Screenshot Sizes"
+msgstr "Смяна на размерите на снимката на екрана"
+
+#: extensions/screenshot-window-sizer/org.gnome.shell.extensions.screenshot-window-sizer.gschema.xml:11
+msgid "Cycle Screenshot Sizes Backward"
+msgstr "Смяна на размерите на снимката на екрана наобратно"
+
+#: extensions/user-theme/org.gnome.shell.extensions.user-theme.gschema.xml:5
+msgid "Theme name"
+msgstr "Име на темата"
+
+#: extensions/user-theme/org.gnome.shell.extensions.user-theme.gschema.xml:6
+msgid "The name of the theme, to be loaded from ~/.themes/name/gnome-shell"
+msgstr ""
+"Името на темата, която да бъде заредена от „~/.themes/name/gnome-shell“"
+
+#: extensions/window-list/extension.js:72
+msgid "Close"
+msgstr "Затваряне"
+
+#: extensions/window-list/extension.js:92
+msgid "Unminimize"
+msgstr "Деминимизиране"
+
+#: extensions/window-list/extension.js:92
+msgid "Minimize"
+msgstr "Минимизиране"
+
+#: extensions/window-list/extension.js:99
+msgid "Unmaximize"
+msgstr "Демаксимизиране"
+
+#: extensions/window-list/extension.js:99
+msgid "Maximize"
+msgstr "Максимизиране"
+
+#: extensions/window-list/extension.js:434
+msgid "Minimize all"
+msgstr "Минимизиране на всички"
+
+#: extensions/window-list/extension.js:440
+msgid "Unminimize all"
+msgstr "Деминимизиране на всички"
+
+#: extensions/window-list/extension.js:446
+msgid "Maximize all"
+msgstr "Максимизиране на всички"
+
+#: extensions/window-list/extension.js:454
+msgid "Unmaximize all"
+msgstr "Демаксимизиране на всички"
+
+#: extensions/window-list/extension.js:462
+msgid "Close all"
+msgstr "Затваряне на всички"
+
+#: extensions/window-list/extension.js:741
+msgid "Window List"
+msgstr "Списък на прозорците"
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:12
+msgid "When to group windows"
+msgstr "Кога прозорците да се групират"
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:13
+msgid ""
+"Decides when to group windows from the same application on the window list. "
+"Possible values are “never”, “auto” and “always”."
+msgstr ""
+"Кога прозорците на една програма да се групират в списъка с прозорците. "
+"Възможните стойности са „never“ (никога), „auto“ (автоматично) и "
+"„always“ (винаги)."
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:20
+#: extensions/window-list/prefs.js:76
+msgid "Show windows from all workspaces"
+msgstr "Да се показват прозорците от всички работни плотове"
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:21
+msgid "Whether to show windows from all workspaces or only the current one."
+msgstr ""
+"Дали да се показват прозорците от всички работни плотове или само от текущия."
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:27
+msgid "Show the window list on all monitors"
+msgstr "Извеждане на списъка с прозорци на всички монитори"
+
+#: extensions/window-list/org.gnome.shell.extensions.window-list.gschema.xml:28
+msgid ""
+"Whether to show the window list on all connected monitors or only on the "
+"primary one."
+msgstr ""
+"Дали списъкът с прозорци да се извежда на всички монитори или само на "
+"основния"
+
+#: extensions/window-list/prefs.js:32
+msgid "Window Grouping"
+msgstr "Групиране на прозорци"
+
+#: extensions/window-list/prefs.js:37
+msgid "Never group windows"
+msgstr "Никога да не се групират"
+
+#: extensions/window-list/prefs.js:38
+msgid "Group windows when space is limited"
+msgstr "Групиране при ограничено място"
+
+#: extensions/window-list/prefs.js:39
+msgid "Always group windows"
+msgstr "Винаги да се групират"
+
+#: extensions/window-list/prefs.js:63
+msgid "Show on all monitors"
+msgstr "На всички монитори"
+
+#: extensions/window-list/workspaceIndicator.js:249
+#: extensions/workspace-indicator/extension.js:254
+msgid "Workspace Indicator"
+msgstr "Индикатор на работните плотове"
+
+#: extensions/workspace-indicator/prefs.js:18
+msgid "Workspace Names"
+msgstr "Имена на работните плотове"
+
+#: extensions/workspace-indicator/prefs.js:39
+#, javascript-format
+msgid "Workspace %d"
+msgstr "Работен плот %d"
+
+#: extensions/workspace-indicator/prefs.js:184
+msgid "Add Workspace"
+msgstr "Добавяне на работен плот"

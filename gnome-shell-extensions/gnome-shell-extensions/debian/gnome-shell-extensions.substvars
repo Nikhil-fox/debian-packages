@@ -1,0 +1,6 @@
+misc:Depends=dconf-gsettings-backend | gsettings-backend
+gnome:Version=45~
+gnome:UpstreamVersion=45~
+gnome:NextVersion=46~
+gnome:NextUpstreamVersion=46~
+misc:Pre-Depends=
